@@ -32,40 +32,77 @@
     </nav>
   </header>
   <main class="form">
-    <h1 class="form__heading">Подбор программы</h1>
+    <h1 class="form__heading wrapper">Подбор программы</h1>
     <form class="information" action="https://echo.htmlacademy.ru">
       <div class=" information__wrapper wrapper">
         <div class="information-data">
           <h2 class="information-data__heading">Заполните анкету, и мы подберем
             программу питания для вашего кота</h2>
-          <p class="information-data__input">Имя:*
-            <input type="text" name="Имя" placeholder="Барсик">
-          </p>
-          <p class="information-data__input">Вес (кг):*
-            <input type="text" name="Имя" placeholder="7">
-          </p>
-          <p class="information-data__input">Возраст (лет):
-            <input type="text" name="Имя" placeholder="7">
-          </p>
+          <ul class="information-data__group">
+            <li class="information-data__input">
+              <label for="name">Имя:*</label><input type="text" name="Имя" placeholder="Барсик" id="name">
+            </li>
+            <li class="information-data__input">
+              <label for="weight">Вес (кг):*</label><input type="text" name="Имя" placeholder="7" id="weight">
+            </li>
+            <li class="information-data__input">
+              <label for="age">Возраст (лет):</label><input type="number" name="Имя" placeholder="7" id="age">
+            </li>
+          </ul>
         </div>
-        <div class="information-radio">
-          <input type="radio" name="option" value="Похудение">Похудение
-          <input type="radio" name="option" value="Набор массы">Набор массы
-          <input type="radio" name="option" value="Не знаю (нужен ваш совет)">Не знаю (нужен ваш совет)
-        </div>
+        <fieldset class="information-radio">
+          <legend class="visually-hidden">Желаемый результат</legend>
+          <ul class="information-radio__group">
+            <li class="information-radio__input">
+              <input type="radio" name="program" value="Похудение" id="slim"><label for="slim">Похудение</label>
+            </li>
+            <li class="information-radio__input">
+              <input type="radio" name="program" value="Набор массы" id="gain"><label for="gain">Набор массы</label>
+            </li>
+            <li class="information-radio__input">
+              <input type="radio" name="program" value="Не знаю (нужен ваш совет)" id="advice"><label for="advice">Не
+                знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
         <div class="information-details">
-
+          <h2 class="information-details__heading">Контактные данные (владелец кота)</h2>
+          <p class="information-data__input">
+            <label for="email">E-mail:*</label><input type="email" name="e-mail" placeholder="kuklachev@gmail.com" id="email">
+          </p>
+          <p class="information-data__input">
+            <label for="telephone">Телефон:*</label><input type="tel" name="telephonenumber" placeholder="8 (960) 900-60-90" id="telephone">
+          </p>
         </div>
+        <div class="information-comment">
+          <h2 class="information-comment__heading">Комментарий</h2>
+          <p class="information-comment__text">
+            <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
+        </div>
+        <fieldset class="information-extra">
+          <legend class="information-extra__heading">Дополнительно</legend>
+          <ul class="information-extra__group">
+            <li class="information-extra__option">
+              <input type="checkbox" name="option" value="Сахарозаменитель" id="sugar"><label
+                for="sugar">Сахарозаменитель</label>
+            </li>
+            <li class="information-extra__option">
+              <input type="checkbox" name="option" value="Питьевая вода" id="water"><label for="water">Питьевая
+                вода</label></li>
+            </li>
+            <li class="information-extra__option">
+              <input type="checkbox" name="option" value="Молоко" id="milk"><label for="milk">Молоко</label>
+            </li>
+            <li class="information-extra__option">
+              <input type="checkbox" name="option" value="Витамины" id="vitamins"><label for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="information__buttin button" type="submit">Отправить заявку</button>
+        <p class="information__necessarily">*-Обязательные поля</p>
       </div>
-
-      <p class="information__submit"><input type="submit"></p>
     </form>
-
-
-
-
-
-
     <section class="location">
       <div class="location__wrapper">
         <div class="location__info">
