@@ -22,9 +22,9 @@
             <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item--active">Каталог продукции</a>
+            <a class="site-list__item">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item--active">
             <a href="#">Подбор программы</a>
           </li>
         </ul>
@@ -36,76 +36,82 @@
     <p class="information-heading">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
     <form class="information" method="POST" action="https://echo.htmlacademy.ru">
-      <div class=" information__wrapper">
-        <div class="information-data">
+      <div class="information__wrapper wrapper">
+        <fieldset class="information-data">
+          <legend class="visyally-hidden">Информация о коте</legend>
           <ul class="information-data__group">
             <li class="information-data__input">
-              <label for="name">Имя:*</label><input type="required" name="Имя" placeholder="Барсик" id="name">
+              <label for="name">Имя:*</label><input type="text" required name="Имя" placeholder="Барсик" id="name">
             </li>
             <li class="information-data__input">
-              <label for="weight">Вес (кг):*</label><input type="required" name="Имя" placeholder="7" id="weight">
+              <label for="weight">Вес (кг):*</label><input type="text" required name="Имя" placeholder="7" id="weight">
             </li>
             <li class="information-data__input">
               <label for="age">Возраст (лет):</label><input type="number" name="Имя" placeholder="7" id="age">
             </li>
           </ul>
-          <fieldset class="information-radio">
-            <legend class="visually-hidden">Желаемый результат</legend>
-            <ul class="information-radio__group">
-              <li class="information-radio__input">
-                <input type="radio" name="program" value="Похудение" id="slim"><label for="slim">Похудение</label>
-              </li>
-              <li class="information-radio__input">
-                <input type="radio" name="program" value="Набор массы" id="gain"><label for="gain">Набор массы</label>
-              </li>
-              <li class="information-radio__input">
-                <input type="radio" name="program" value="Не знаю (нужен ваш совет)" id="advice"><label for="advice">Не
-                  знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="information-details">
-          <h2 class="information-details__heading heading">Контактные данные (владелец кота)</h2>
-          <p class="information-data__input">
-            <label for="email">E-mail:*</label><input type="required" name="e-mail" placeholder="kuklachev@gmail.com"
-              id="email">
-          </p>
-          <p class="information-data__input">
-            <label for="telephone">Телефон:*</label><input type="required" name="telephonenumber"
-              placeholder="8 (960) 900-60-90" id="telephone">
-          </p>
-        </div>
-        <h2 class="information-comment__heading heading">Комментарий</h2>
-        <p class="information-comment__text">
-          <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </p>
-        <fieldset class="information-extra">
-          <legend class="information-extra__heading heading">Дополнительно</legend>
-          <ul class="information-extra__group">
-            <li class="information-extra__option">
-              <input type="checkbox" name="option" value="Сахарозаменитель" id="sugar">
-              <label for="sugar">Сахарозаменитель</label>
+        </fieldset>
+        <fieldset class="information-radio">
+          <legend class="visually-hidden">Желаемый результат</legend>
+          <ul class="information-radio__group">
+            <li class="information-radio__input">
+              <input type="radio" name="program" value="Похудение" id="slim"><label for="slim">Похудение</label>
             </li>
-            <li class="information-extra__option">
-              <input type="checkbox" name="option" value="Питьевая вода" id="water">
-              <label for="water">Питьевая вода</label>
+            <li class="information-radio__input">
+              <input type="radio" name="program" value="Набор массы" id="gain"><label for="gain">Набор массы</label>
             </li>
-            <li class="information-extra__option">
-              <input type="checkbox" name="option" value="Молоко" id="milk">
-              <label for="milk">Молоко</label>
-            </li>
-            <li class="information-extra__option">
-              <input type="checkbox" name="option" value="Витамины" id="vitamins">
-              <label for="vitamins">Витамины</label>
+            <li class="information-radio__input">
+              <input type="radio" name="program" value="Не знаю (нужен ваш совет)" id="advice"><label for="advice">Не
+                знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
-        <div class="information-dispatch">
-          <button class="information-dispatch__button button" type="submit">Отправить заявку</button>
-          <p class="information-dispatch__necessarily">*-Обязательные поля</p>
-        </div>
       </div>
+      <fieldset class="information-details">
+        <legend class="information-details__heading heading">Контактные данные (владелец кота)</legend>
+        <ul class="information-details__list wrapper">
+          <li class="information-data__input">
+            <label for="email">E-mail:*</label><input type="email" required name="e-mail"
+              placeholder="kuklachev@gmail.com" id="email">
+          </li>
+          <li class="information-data__input">
+            <label for="telephone">Телефон:*</label><input type="tel" required name="telephonenumber"
+              placeholder="8 (960) 900-60-90" id="telephone">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="information-comment">
+        <legend class="information-comment__heading heading">Комментарий</legend>
+        <p class="information-comment__text wrapper">
+          <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </p>
+      </fieldset>
+      <fieldset class="information-extra">
+        <legend class="information-extra__heading heading">Дополнительно</legend>
+        <ul class="information-extra__group wrapper">
+          <li class="information-extra__option">
+            <input type="checkbox" name="option" value="Сахарозаменитель" id="sugar">
+            <label for="sugar">Сахарозаменитель</label>
+          </li>
+          <li class="information-extra__option">
+            <input type="checkbox" name="option" value="Питьевая вода" id="water">
+            <label for="water">Питьевая вода</label>
+          </li>
+          <li class="information-extra__option">
+            <input type="checkbox" name="option" value="Молоко" id="milk">
+            <label for="milk">Молоко</label>
+          </li>
+          <li class="information-extra__option">
+            <input type="checkbox" name="option" value="Витамины" id="vitamins">
+            <label for="vitamins">Витамины</label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="information-dispatch wrapper">
+        <button class="information-dispatch__button button" type="submit">Отправить заявку</button>
+        <p class="information-dispatch__necessarily">*-Обязательные поля</p>
+      </div>
+
     </form>
     <section class="location">
       <div class="location__wrapper">
