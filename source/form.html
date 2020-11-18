@@ -24,7 +24,7 @@
           <li class="site-list__item">
             <a class="site-list__item">Каталог продукции</a>
           </li>
-          <li class="site-list__item--active">
+          <li class="site-list__item site-list__item--active">
             <a href="#">Подбор программы</a>
           </li>
         </ul>
@@ -41,10 +41,10 @@
           <legend class="visyally-hidden">Информация о коте</legend>
           <ul class="information-data__group">
             <li class="information-data__input">
-              <label for="name">Имя:*</label><input type="text" required name="Имя" placeholder="Барсик" id="name">
+              <label for="name">Имя:<sup>*</sup></label><input type="text" required name="Имя" placeholder="Барсик" id="name">
             </li>
             <li class="information-data__input">
-              <label for="weight">Вес (кг):*</label><input type="text" required name="Имя" placeholder="7" id="weight">
+              <label for="weight">Вес (кг):<sup>*</sup></label><input type="text" required name="Имя" placeholder="7" id="weight">
             </li>
             <li class="information-data__input">
               <label for="age">Возраст (лет):</label><input type="number" name="Имя" placeholder="7" id="age">
@@ -71,11 +71,11 @@
         <legend class="information-details__heading heading">Контактные данные (владелец кота)</legend>
         <ul class="information-details__list wrapper">
           <li class="information-data__input">
-            <label for="email">E-mail:*</label><input type="email" required name="e-mail"
+            <label for="email">E-mail:<sup>*</sup></label><input type="email" required name="e-mail"
               placeholder="kuklachev@gmail.com" id="email">
           </li>
           <li class="information-data__input">
-            <label for="telephone">Телефон:*</label><input type="tel" required name="telephonenumber"
+            <label for="telephone">Телефон:<sup>*</sup></label><input type="tel" required name="telephonenumber"
               placeholder="8 (960) 900-60-90" id="telephone">
           </li>
         </ul>
@@ -109,7 +109,7 @@
       </fieldset>
       <div class="information-dispatch wrapper">
         <button class="information-dispatch__button button" type="submit">Отправить заявку</button>
-        <p class="information-dispatch__necessarily">*-Обязательные поля</p>
+        <p class="information-dispatch__necessarily"><sup>*</sup>-Обязательные поля</p>
       </div>
 
     </form>
