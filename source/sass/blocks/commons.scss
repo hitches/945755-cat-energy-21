@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+
+.feedback {
+  color: black;
+}
+
+.feedback ul {
+  list-style: none;
+}
+
+.feedback p {
+  margin-bottom: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
