@@ -1,5 +1,6 @@
 @import "global/fonts";
 @import "variables";
+@import "normalize";
 @import "visually-hidden";
 @import "blocks/page.scss";
 @import "blocks/catalogs";
@@ -20,4 +21,3 @@
 @import "blocks/title";
 @import "blocks/wrapper";
 @import "blocks/button.scss";
-@import "normalize";
