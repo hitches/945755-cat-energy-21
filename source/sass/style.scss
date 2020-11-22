@@ -1,7 +1,7 @@
 @import "global/fonts";
 @import "variables";
 @import "normalize";
-@import "visually-hidden";
+@import "blocks/visyally-hidden";
 @import "blocks/page.scss";
 @import "blocks/catalogs";
 @import "blocks/commons";
@@ -20,4 +20,13 @@
 @import "blocks/stats";
 @import "blocks/title";
 @import "blocks/wrapper";
-@import "blocks/button.scss";
+@import "blocks/button";
+@import "blocks/form";
+@import "blocks/information";
+@import "blocks/information-radio";
+@import "blocks/information-heading";
+@import "blocks/information-extra";
+@import "blocks/information-dispatch";
+@import "blocks/information-details";
+@import "blocks/information-data";
+@import "blocks/information-comment";
