@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 57px;
 }
 
 .additional__title {
@@ -23,5 +24,9 @@
 .additional__price {
   font-size: 16px;
   line-height: 1.25;
+  width: 280px;
+  height: 289px;
+  background-image: url("/img/price@1x.jpg");
   color: #ffffff;
+  margin-bottom: 63px;
 }
