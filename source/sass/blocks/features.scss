@@ -9,6 +9,29 @@
   padding: 0;
   list-style: none;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.features__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.features__item:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+  }
 }
 
 .features__descriptions {

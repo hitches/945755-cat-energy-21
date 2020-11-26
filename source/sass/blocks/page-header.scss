@@ -1,5 +1,34 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 17px;
+  height: 66px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 120px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.page-header__logo {
+  width: 230px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
 }

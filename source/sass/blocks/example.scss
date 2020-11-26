@@ -2,6 +2,25 @@
   background-color: $background-grey;
 }
 
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.example__result {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .example__title {
   margin-bottom: 33px;
 }
@@ -17,8 +36,14 @@
 .example__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: start;
   list-style: none;
   margin-bottom: 25px;
+}
+
+.example__item {
+  margin-right: 50px;
 }
 
 .example__price {
@@ -30,4 +55,8 @@
 
 .example__slider {
   margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 690px;
+  }
 }
