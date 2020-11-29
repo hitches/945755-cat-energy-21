@@ -8,10 +8,17 @@
   }
 }
 
+.page-footer__conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-footer__logo {
   margin-bottom: 32px;
 }
 
 .page-footer__link {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 22px;
 }

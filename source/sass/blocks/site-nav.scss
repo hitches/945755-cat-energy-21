@@ -1,23 +1,15 @@
-.site-nav {
+.site-nav__wrapper {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
     padding-top: 42px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 69px;
-  }
-}
-
-.site-nav__wrapper {
-  @media (min-width: $tablet-width) {
     width: 450px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 69px;
     width: 478px;
     margin: 0 auto;
   }
