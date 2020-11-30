@@ -1,0 +1,8 @@
+.information__wrapper {
+  padding-left: 71px;
+  padding-right: 67px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
+}

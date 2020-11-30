@@ -41,30 +41,30 @@
 
 
 .item__slim::before {
-    content: "";
-    position: absolute;
-    background-image: url("/img/slim.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    width: 50px;
-    height: 53px;
-    left: 20px;
-    top: -10px;
+  content: "";
+  position: absolute;
+  background-image: url("/img/slim.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  width: 50px;
+  height: 53px;
+  left: 20px;
+  top: -10px;
 
-    @media (min-width: $tablet-width) {
-      background-image: url("/img/slim-tablet.jpg");
-      width: 200px;
-      height: 211px;
-      left: 55%;
-    }
+  @media (min-width: $tablet-width) {
+    background-image: url("/img/slim-tablet.jpg");
+    width: 200px;
+    height: 211px;
+    left: 55%;
+  }
 
-    @media (min-width: $desktop-width) {
-      background-image: url("/img/slim-desktop.jpg");
-      width: 100px;
-      height: 106px;
-      left: 110px;
-    }
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/slim-desktop.jpg");
+    width: 100px;
+    height: 106px;
+    left: 110px;
+  }
 }
 
 .item__mass::before {

@@ -1,5 +1,7 @@
 .information-comment {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .information-comment__textarea {
@@ -12,4 +14,14 @@
   font-size: 24px;
   line-height: 1.08;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 69px;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
 }
