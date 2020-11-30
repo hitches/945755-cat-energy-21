@@ -4,4 +4,22 @@
 
 .promo__wrapper {
   position: relative;
+  background-color: $green;
+}
+
+.promo__wrapper::before {
+  @media (max-width: 767px) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/halfcat@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    opacity: 0.15;
+
+  }
 }

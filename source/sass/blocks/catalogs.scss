@@ -18,8 +18,11 @@
 
 .catalogs__item {
   padding-left: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-left: 52px;
   }
 }
+
+
