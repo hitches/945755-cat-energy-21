@@ -9,7 +9,7 @@
 
 <body class="page">
   <header class="page-header">
-    <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+    <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»" href="index.html">
       <img src="img/img-logotype-mobile.svg" width="230" height="58"
         alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
     </a>
@@ -37,16 +37,16 @@
     <form class="information" method="POST" action="https://echo.htmlacademy.ru">
       <div class="information__wrapper wrapper">
         <fieldset class="information-data">
-          <legend class="visyally-hidden">Информация о коте</legend>
+          <legend class="visually-hidden">Информация о коте</legend>
           <ul class="information-data__group">
             <li class="information-data__input">
-              <label for="name">Имя:<sup>*</sup></label><input type="text" required name="Имя" placeholder="Барсик" id="name">
+              <label class="information-data__label" for="name">Имя:<sup>*</sup></label><input class="information-data__rectangle" type="text" required name="Имя" placeholder="Барсик" id="name">
             </li>
             <li class="information-data__input">
-              <label for="weight">Вес (кг):<sup>*</sup></label><input type="text" required name="Имя" placeholder="7" id="weight">
+              <label class="information-data__label" for="weight">Вес (кг):<sup>*</sup></label><input class="information-data__rectangle" type="text" required name="Имя" placeholder="7" id="weight">
             </li>
             <li class="information-data__input">
-              <label for="age">Возраст (лет):</label><input type="number" name="Имя" placeholder="7" id="age">
+              <label class="information-data__label" for="age">Возраст (лет):</label><input class="information-data__rectangle" type="number" name="Имя" placeholder="7" id="age">
             </li>
           </ul>
         </fieldset>
@@ -69,12 +69,12 @@
       <fieldset class="information-details">
         <legend class="information-details__heading heading">Контактные данные (владелец кота)</legend>
         <ul class="information-details__list wrapper">
-          <li class="information-data__input">
-            <label for="email">E-mail:<sup>*</sup></label><input type="email" required name="e-mail"
+          <li class="information-details__input">
+            <label class="information-details__label" for="email">E-mail:<sup>*</sup></label><input class="information-details__rectangle" type="email" required name="e-mail"
               placeholder="kuklachev@gmail.com" id="email">
           </li>
-          <li class="information-data__input">
-            <label for="telephone">Телефон:<sup>*</sup></label><input type="tel" required name="telephonenumber"
+          <li class="information-details__input">
+            <label class="information-details__label" for="telephone">Телефон:<sup>*</sup></label><input class="information-details__rectangle" type="tel" required name="telephonenumber"
               placeholder="8 (960) 900-60-90" id="telephone">
           </li>
         </ul>
@@ -82,7 +82,7 @@
       <fieldset class="information-comment">
         <legend class="information-comment__heading heading">Комментарий</legend>
         <p class="information-comment__text wrapper">
-          <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="information-comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </p>
       </fieldset>
       <fieldset class="information-extra">
@@ -108,7 +108,7 @@
       </fieldset>
       <div class="information-dispatch wrapper">
         <button class="information-dispatch__button button" type="submit">Отправить заявку</button>
-        <p class="information-dispatch__necessarily"><sup>*</sup>-Обязательные поля</p>
+        <p class="information-dispatch__necessarily"><sup>*</sup>&nbsp;-Обязательные поля</p>
       </div>
 
     </form>

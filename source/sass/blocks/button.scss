@@ -1,8 +1,11 @@
 .button {
+  min-width: 280px;
+  min-height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: $green;
   text-transform: uppercase;
-  text-align: center;
-  padding: 7px 44px 7px 44px;
   color: #ffffff;
   border: none;
 }

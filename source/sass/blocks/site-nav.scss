@@ -1,3 +1,20 @@
+.site-nav__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 42px;
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+    width: 478px;
+    margin: 0 auto;
+  }
+}
+
 .site-nav__toggle {
   background: none;
   border: none;
@@ -5,10 +22,21 @@
   width: 24px;
   height: 18px;
   background-image: url("/img/naw-toogle.svg");
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .site-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 36px;
+  }
 }

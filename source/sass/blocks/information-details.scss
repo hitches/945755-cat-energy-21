@@ -1,4 +1,6 @@
 .information-details {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -6,16 +8,28 @@
   padding-left: 20px;
   font-size: 24px;
   line-height: 1.08;
-  font-weight: bold;
+  margin-bottom: 32px;
 }
 
 .information-details__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.information-data__input {
-  font-size: 16px;
-  line-height: 1.13;
+.information-details__input {
+  margin-bottom: 13px;
+}
+
+.information-details__label {
+  margin-right: 14px;
+}
+
+.information-details__rectangle {
+  border: 1px solid #e7e7e7;
+  color: #444444;
+  font-style: $font-oswald;
+  font-weight: 400;
 }

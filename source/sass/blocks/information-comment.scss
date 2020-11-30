@@ -2,9 +2,14 @@
   border: none;
 }
 
+.information-comment__textarea {
+  resize: none;
+  border: 1px;
+  border-color: #e7e7e7;
+}
+
 .information-comment__heading {
-  padding-left: 20px;
   font-size: 24px;
   line-height: 1.08;
-  font-weight: bold;
+  margin-bottom: 34px;
 }

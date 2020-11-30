@@ -3,16 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
   <header class="page-header">
-    <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
-      <img src="img/img-logotype-mobile.svg" width="230" height="58"
-        alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
-    </a>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+        <img src="img/img-logotype-mobile.svg" width="230" height="58"
+          alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+      </a>
+    </div>
     <nav class="site-nav">
       <button class="site-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="site-nav__wrapper">
@@ -32,12 +35,18 @@
   </header>
   <main class="main-page">
     <section class="promo">
-      <div class="promo__wrapper wrapper">
+      <div class="promo__wrapper">
         <div class="promo-header">
-          <h1 class="promo-header__heading">Функциональное питание для котов</h1>
-            <p class="promo-header__slogan">Занялся собой? Займись котом!</p>
-            <img class="promo-header__logo" alt="Питание для котов" src="img/header-logo@1x.png" width="280px" height="270px">
-            <a class="promo-header__program button" href="#">Подобрать программу</a>
+          <h1 class="promo-header__heading">Функциональное<br>
+            питание для котов</h1>
+          <p class="promo-header__slogan">Занялся собой? Займись котом!</p>
+          <div class="promo-header__program">
+            <a class="promo-header__button button" href="#">Подобрать программу</a>
+          </div>
+        </div>
+        <div class="promo-header__can">
+          <img class="promo-header__logo" alt="Питание для котов" src="img/header-logo@1x.png" width="280px"
+            height="270px">
         </div>
       </div>
     </section>
@@ -65,18 +74,14 @@
         <h2 class="features__title title">Как это работает</h2>
         <ul class="features__list">
           <li class="features__item">
-            <p class="features__descriptions">Функциональное питание
-              содержит только полезные
-              питательные вещества.</p>
+            <p class="features__descriptions">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="features__item">
-            <p class="features__descriptions">Выпускается в виде порошка,
-              который нужно лишь залить
-              кипятком и готово.</p>
+            <p class="features__descriptions">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </p>
           </li>
           <li class="features__item">
-            <p class="features__descriptions">Замените один-два приема
-              обычной еды на наше
+            <p class="features__descriptions">Замените один-два приема обычной еды на наше<br>
               функциональное питание.</p>
           </li>
           <li class="features__item">
@@ -88,23 +93,27 @@
     </section>
     <section class="example">
       <div class="example__wrapper wrapper">
-        <h2 class="example__title title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim.
-          Отличный результат без изнуряющих тренировок!
-          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <ul class="example__list">
-          <li class="example__item stats">
-            <h3 class="stats__number">5 кг</h3>
-            <p class="stats__info">Снижение веса</p>
-          </li>
-          <li class="example__item stats">
-            <h3 class="stats__number">60 дней</h3>
-            <p class="stats__info">Затрачено времени</p>
-          </li>
-        </ul>
-        <p class="example__price">Затраты на питание:<span>15000 руб.</span></p>
+        <div class="example__text">
+          <h2 class="example__title title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim.
+            Отличный результат без изнуряющих тренировок!
+            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__result">
+            <ul class="example__list">
+              <li class="example__item stats">
+                <h3 class="stats__number">5 кг</h3>
+                <p class="stats__info">Снижение веса</p>
+              </li>
+              <li class="example__item stats">
+                <h3 class="stats__number">60 дней</h3>
+                <p class="stats__info">Затрачено времени</p>
+              </li>
+            </ul>
+            <p class="example__price">Затраты на питание:<span>15000 руб.</span></p>
+          </div>
+        </div>
         <div class="example__slider slider">
           <div class="example__image">
             <img src="img/before@1x.jpg" alt="До" width="311px" height="232px">
