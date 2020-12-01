@@ -1,4 +1,5 @@
 .information-heading {
+  width: 300px;
   font-size: 14px;
   line-height: 1.3;
   padding-left: 20px;
@@ -7,6 +8,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: 500px;
     font-size: 20px;
     line-height: 1.5;
     padding-left: 70px;
@@ -14,6 +16,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 550px;
     padding-left: 110px;
     padding-right: 110px;
   }

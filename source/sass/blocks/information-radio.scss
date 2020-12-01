@@ -1,4 +1,6 @@
 .information-radio {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 1.13;
   border: none;
@@ -7,7 +9,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
-    padding-left: 100px;
+    padding-left: 65px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
   }
 }
 
@@ -15,8 +21,41 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-left: 65px;
 }
 
 .information-radio__input {
   margin-bottom: 13px;
+}
+
+
+.information-radio__group label {
+  position: relative;
+  display: block;
+}
+
+.information-radio__checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  left: -50px;
+  top: -5px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.information-radio__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 8px solid #68b738;
+  left: -43px;
+  top: 2px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }

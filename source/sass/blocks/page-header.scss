@@ -30,4 +30,8 @@
   @media (min-width: $tablet-width) {
     width: 175px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
