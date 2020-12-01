@@ -2,9 +2,14 @@
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 34px;
     margin-bottom: 0;
     height: 36px;
+  }
+}
+
+.site-list__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
   }
 }
 

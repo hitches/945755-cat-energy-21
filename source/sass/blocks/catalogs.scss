@@ -18,8 +18,20 @@
 
 .catalogs__item {
   padding-left: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-left: 52px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.catalogs__item:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
   }
 }

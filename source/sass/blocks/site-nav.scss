@@ -3,25 +3,28 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 42px;
+    padding-top: 18px;
     width: 450px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
+    padding-top: 26px;
     width: 478px;
     margin: 0 auto;
   }
 }
 
 .site-nav__toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   background: none;
   border: none;
   padding: 0;
   width: 24px;
   height: 18px;
-  background-image: url("/img/naw-toogle.svg");
+  background-image: url("../img/naw-toogle.svg");
 
   @media (min-width: $tablet-width) {
     display: none;

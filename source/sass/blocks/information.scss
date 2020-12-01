@@ -1,0 +1,12 @@
+.information__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 71px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

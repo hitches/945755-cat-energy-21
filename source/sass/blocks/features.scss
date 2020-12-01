@@ -28,6 +28,10 @@
   @media (min-width: $tablet-width) {
     width: 50%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .features__item:not(:last-child) {

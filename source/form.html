@@ -3,32 +3,35 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
   <header class="page-header">
-    <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»" href="index.html">
-      <img src="img/img-logotype-mobile.svg" width="230" height="58"
-        alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
-    </a>
-    <nav class="site-nav">
-      <button class="site-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <div class="site-nav__wrapper">
-        <ul class="site-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+        <img src="img/img-logotype-mobile.svg" width="230" height="58"
+          alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+      </a>
+      <nav class="site-nav">
+        <button class="site-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <div class="site-nav__wrapper">
+          <ul class="site-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="form">
     <h1 class="form__heading">Подбор программы</h1>
@@ -54,13 +57,13 @@
           <legend class="visually-hidden">Желаемый результат</legend>
           <ul class="information-radio__group">
             <li class="information-radio__input">
-              <input type="radio" name="program" value="Похудение" id="slim"><label for="slim">Похудение</label>
+              <input class="visually-hidden information-radio__checkbox" type="radio" name="program" value="Похудение" id="slim" checked><label for="slim">Похудение</label>
             </li>
             <li class="information-radio__input">
-              <input type="radio" name="program" value="Набор массы" id="gain"><label for="gain">Набор массы</label>
+              <input class="visually-hidden information-radio__checkbox" type="radio" name="program" value="Набор массы" id="gain"><label for="gain">Набор массы</label>
             </li>
             <li class="information-radio__input">
-              <input type="radio" name="program" value="Не знаю (нужен ваш совет)" id="advice"><label for="advice">Не
+              <input class="visually-hidden information-radio__checkbox" type="radio" name="program" value="Не знаю (нужен ваш совет)" id="advice"><label for="advice">Не
                 знаю (нужен ваш совет)</label>
             </li>
           </ul>
@@ -89,19 +92,19 @@
         <legend class="information-extra__heading heading">Дополнительно</legend>
         <ul class="information-extra__group wrapper">
           <li class="information-extra__option">
-            <input type="checkbox" name="option" value="Сахарозаменитель" id="sugar">
+            <input class="visually-hidden information-extra__checkbox" type="checkbox" name="option" value="Сахарозаменитель" id="sugar">
             <label for="sugar">Сахарозаменитель</label>
           </li>
           <li class="information-extra__option">
-            <input type="checkbox" name="option" value="Питьевая вода" id="water">
+            <input class="visually-hidden information-extra__checkbox" type="checkbox" name="option" value="Питьевая вода" id="water">
             <label for="water">Питьевая вода</label>
           </li>
           <li class="information-extra__option">
-            <input type="checkbox" name="option" value="Молоко" id="milk">
+            <input class="visually-hidden information-extra__checkbox" type="checkbox" name="option" value="Молоко" id="milk">
             <label for="milk">Молоко</label>
           </li>
           <li class="information-extra__option">
-            <input type="checkbox" name="option" value="Витамины" id="vitamins">
+            <input class="visually-hidden information-extra__checkbox" type="checkbox" name="option" value="Витамины" id="vitamins">
             <label for="vitamins">Витамины</label>
           </li>
         </ul>
@@ -146,7 +149,7 @@
       </ul>
       <a class="page-footer__link copyright" href="https://htmlacademy.ru/intensive/adaptive" title="html-accademy">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__image" src="/img/htmlacademy.svg" width="27px" height="34px" alt="html-accademy">
+        <img class="copyright__image" src="img/htmlacademy.svg" width="27px" height="34px" alt="html-accademy">
       </a>
     </div>
   </footer>

@@ -1,9 +1,37 @@
+.information-dispatch {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
+}
+
 .information-dispatch__button {
   font-size: 16px;
   line-height: 1.25;
+
+  @media (min-width: $tablet-width) {
+    min-width: 282px;
+    min-height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+  }
 }
 
 .information-dispatch__necessarily {
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 1.14;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 81px;
+  }
 }

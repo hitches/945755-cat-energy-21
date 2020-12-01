@@ -15,37 +15,36 @@
         <img src="img/img-logotype-mobile.svg" width="230" height="58"
           alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
       </a>
+      <nav class="site-nav">
+        <button class="site-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <div class="site-nav__wrapper">
+          <ul class="site-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="site-nav">
-      <button class="site-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <div class="site-nav__wrapper">
-        <ul class="site-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
   </header>
   <main class="main-page">
     <section class="promo">
       <div class="promo__wrapper">
-        <div class="promo-header">
-          <h1 class="promo-header__heading">Функциональное<br>
-            питание для котов</h1>
-          <p class="promo-header__slogan">Занялся собой? Займись котом!</p>
-          <div class="promo-header__program">
-            <a class="promo-header__button button" href="#">Подобрать программу</a>
-          </div>
+        <div class="promo__header">
+          <h1 class="promo__heading">Функциональное питание для котов</h1>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+
+          <a class="promo__button button" href="#">Подобрать программу</a>
+
         </div>
-        <div class="promo-header__can">
-          <img class="promo-header__logo" alt="Питание для котов" src="img/header-logo@1x.png" width="280px"
+        <div class="promo__can">
+          <img class="promo__logo" alt="Питание для котов" src="img/header-logo@1x.png" width="280px"
             height="270px">
         </div>
       </div>
@@ -55,13 +54,13 @@
         <h2 class="visually-hidden">Выбор каталога</h2>
         <ul class="catalogs__list">
           <li class="catalogs__item item">
-            <h3 class="item__title">Похудение</h3>
+            <h3 class="item__title item__slim">Похудение</h3>
             <p class="item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="item__link" href="#">Каталог slim</a>
           </li>
           <li class="catalogs__item item">
-            <h3 class="item__title">Набор массы</h3>
+            <h3 class="item__title item__mass">Набор массы</h3>
             <p class="item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
               Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="item__link" href="#">Каталог pro</a>
@@ -158,7 +157,7 @@
       </ul>
       <a class="page-footer__link copyright" href="https://htmlacademy.ru/intensive/adaptive" title="html-accademy">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__image" src="/img/htmlacademy.svg" width="27px" height="34px" alt="html-accademy">
+        <img class="copyright__image" src="img/htmlacademy.svg" width="27px" height="34px" alt="html-accademy">
       </a>
     </div>
   </footer>
