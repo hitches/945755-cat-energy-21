@@ -47,10 +47,25 @@
 }
 
 .example__price {
+  margin: 0;
   margin-bottom: 42px;
   font-size: 14px;
   line-height: 1.43;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.example__coast {
+  text-align: right;
 }
 
 .example__slider {

@@ -1,6 +1,9 @@
 .information-dispatch {
+  margin-bottom: 32px;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {

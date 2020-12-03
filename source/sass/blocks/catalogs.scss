@@ -2,6 +2,11 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 27px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .catalogs__list {

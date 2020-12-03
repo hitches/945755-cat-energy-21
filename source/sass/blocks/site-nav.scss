@@ -38,8 +38,9 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    height: 36px;
+    min-height: 36px;
   }
 }

@@ -5,6 +5,11 @@
 .promo__wrapper {
   position: relative;
   background-color: $green;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .promo__wrapper::before {

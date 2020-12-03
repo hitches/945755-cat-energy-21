@@ -8,18 +8,19 @@
   resize: none;
   border: 1px;
   border-color: #e7e7e7;
-  padding-left: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
   width: 280px;
   height: 150px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
+    padding-left: 19px;
     width: 631px;
     height: 174px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
     width: 1220px;
     height: 174px;
   }

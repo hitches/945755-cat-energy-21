@@ -2,6 +2,7 @@
   border: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 34px;
 }
 
 .information-extra__heading {
@@ -22,7 +23,6 @@
 }
 
 .information-extra__group {
-  margin: 0;
   padding: 0;
   list-style: none;
   padding-left: 66px;
@@ -38,7 +38,7 @@
 .information-extra__option {
   font-size: 16px;
   line-height: 1.13;
-  margin-bottom: 13px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -66,6 +66,14 @@
   top: -5px;
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/checkbox40px.svg");
+    left: -50px;
+    top: -5px;
+  }
 }
 
 .information-extra__checkbox:checked + label::after {
@@ -78,4 +86,9 @@
   top: 3px;
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    left: -38px;
+    top: 8px;
+  }
 }
