@@ -14,8 +14,10 @@
 .information-dispatch__button {
   font-size: 16px;
   line-height: 1.25;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     min-width: 282px;
     min-height: 52px;
   }

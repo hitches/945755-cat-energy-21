@@ -1,6 +1,8 @@
 .additional__heading {
   font-size: 24px;
   line-height: 1;
+  font-weight: 400;
+  padding-left: 20px;
 }
 
 .additional__list {
@@ -22,12 +24,80 @@
   line-height: 1;
 }
 
-.additional__price {
+.additional__button {
+  width: 100%;
+
+}
+
+.additional__background {
   font-size: 16px;
+  text-align: center;
   line-height: 1.25;
-  width: 280px;
+  width: 100%;
   height: 289px;
   background-image: url("/img/price@1x.jpg");
+  background-size: cover;
   color: #ffffff;
   margin-bottom: 63px;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    background-image: url("/img/price@2x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
+
+.additional__text {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.additional__price {
+  font-family: $font-arial;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 160px;
+  text-align: center;
+  padding-top: 186px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    padding-top: 71px;
+    padding-left: 423px;
+    padding-right: 124px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+
+
+.additional__price::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/surprise.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  width: 78px;
+  height: 80px;
+  top: 65px;
+  left: 40px;
+}
+
+
