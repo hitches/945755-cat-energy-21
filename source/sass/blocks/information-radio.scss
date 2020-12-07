@@ -24,9 +24,8 @@
 }
 
 .information-radio__input {
-  margin-bottom: 13px;
+  margin-bottom: 25px;
 }
-
 
 .information-radio__group label {
   position: relative;
@@ -54,12 +53,12 @@
 .information-radio__checkbox:checked + label::after {
   content: "";
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: 13.5px;
+  height: 13.5px;
   border-radius: 50%;
-  border: 8px solid #68b738;
-  left: -43px;
-  top: 2px;
+  border: 7px solid #68b738;
+  left: -42px;
+  top: 3px;
   background-repeat: no-repeat;
   background-position: 0 0;
 

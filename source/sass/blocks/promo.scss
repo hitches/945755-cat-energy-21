@@ -64,6 +64,10 @@
     margin: 0;
     text-align: left;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .promo__slogan {
