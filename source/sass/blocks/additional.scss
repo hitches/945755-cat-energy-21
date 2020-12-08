@@ -1,18 +1,61 @@
-.additional__wrapper {
+.additional__strip {
+  display: flex;
+  position: relative;
+}
+
+.additional__strip::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  height: 2px;
+  top: 50px;
+  background: #68b738;
+  border-width: 0 10px;
+}
+
+.additional__extra {
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
+    width: 1300px;
   }
 }
 
 .additional__heading {
+  width: auto;
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
+  background-color: #ffffff;
   padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    font-size: 36px;
+    line-height: 1;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
+    width: 440px;
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
   }
 }
 
@@ -47,11 +90,27 @@
 }
 
 .additional__description {
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 1;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  min-width: 200px;
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.additional__span {
+  @media (min-width: $desktop-width) {
+    width: 60%;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
@@ -69,20 +128,20 @@
   line-height: 1.25;
   width: 100%;
   height: 289px;
-  background-image: url("/img/price@1x.jpg");
+  background-image: url("../img/price@1x.jpg");
   background-size: cover;
   color: #ffffff;
   margin-bottom: 63px;
 
   @media (min-width: $tablet-width) {
     height: 200px;
-    background-image: url("/img/price@2x.jpg");
+    background-image: url("../img/price@2x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 289px;
-    background-image: url("/img/price@1x.jpg");
+    background-image: url("../img/price@1x.jpg");
   }
 }
 
@@ -90,6 +149,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 600px;
+    align-items: center;
   }
 }
 
@@ -114,6 +178,10 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-top: 185px;
+    max-width: 163px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 

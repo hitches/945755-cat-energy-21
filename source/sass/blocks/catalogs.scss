@@ -4,10 +4,9 @@
   margin-bottom: 27px;
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     max-width: 1220px;
     margin: 0 auto;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 }
 
