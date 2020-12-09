@@ -1,4 +1,14 @@
 .title {
+  padding-top: 27px;
   font-size: 36px;
   line-height: 1.11;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+  }
 }

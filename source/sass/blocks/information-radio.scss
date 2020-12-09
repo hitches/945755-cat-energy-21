@@ -9,7 +9,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
-    padding-left: 65px;
   }
 
   @media (min-width: $tablet-width) {
@@ -21,13 +20,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left: 65px;
+  padding-left: 50px;
 }
 
 .information-radio__input {
-  margin-bottom: 13px;
+  margin-bottom: 25px;
 }
-
 
 .information-radio__group label {
   position: relative;
@@ -45,17 +43,30 @@
   top: -5px;
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .information-radio__checkbox:checked + label::after {
   content: "";
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: 13.5px;
+  height: 13.5px;
   border-radius: 50%;
-  border: 8px solid #68b738;
-  left: -43px;
-  top: 2px;
+  border: 7px solid #68b738;
+  left: -42px;
+  top: 3px;
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    border: 9px solid #68b738;
+    left: -39px;
+    top: 6px;
+  }
 }

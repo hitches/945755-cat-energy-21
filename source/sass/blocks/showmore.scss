@@ -1,4 +1,21 @@
+.showmore {
+  @media (min-width: $tablet-width) {
+    width: 40%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
 .showmore__button {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #f2f2f2;
   color: #444444;
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }

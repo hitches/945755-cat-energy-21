@@ -1,17 +1,10 @@
-.site-nav__wrapper {
-  display: none;
-
+.site-nav {
   @media (min-width: $tablet-width) {
-    display: block;
-    padding-top: 18px;
-    width: 450px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 26px;
-    width: 478px;
-    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    min-width: 500px;
+    flex-wrap: wrap;
+    flex-shrink: 3;
   }
 }
 
@@ -32,14 +25,21 @@
 }
 
 .site-nav__list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    height: 36px;
+    min-height: 36px;
+    padding-top: 14px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 26px;
   }
 }
