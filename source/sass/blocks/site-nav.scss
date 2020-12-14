@@ -19,6 +19,10 @@
   width: 50px;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .site-nav--closed .site-nav__toggle::before {
