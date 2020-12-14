@@ -43,4 +43,12 @@
   color: #444444;
   font-style: $font-oswald;
   font-weight: 400;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #e7e7e7;
+  }
 }

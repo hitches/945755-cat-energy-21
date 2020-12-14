@@ -24,9 +24,15 @@
 
 .features__item {
   padding-left: 80px;
+  position: relative;
+  margin-bottom: 20px;
+  min-height: 55px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 50%;
+    padding-top: 55px;
+    margin-bottom: 94px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,8 +46,35 @@
   }
 }
 
+.features__item::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  top: -5px;
+  left: 0;
+}
+
+.features__item:nth-child(1)::before {
+  background-image: url("../img/Group1.png");
+}
+
+.features__item:nth-child(2)::before {
+  background-image: url("../img/Group2.png");
+}
+
+.features__item:nth-child(3)::before {
+  background-image: url("../img/Group3.png");
+}
+
+.features__item:nth-child(4)::before {
+  background-image: url("../img/Group4.png");
+}
+
 .features__descriptions {
-  margin-bottom: 20px;
   font-family: $font-arial;
   font-size: 14px;
   font-weight: 400;

@@ -38,6 +38,10 @@
   line-height: 1;
   text-transform: uppercase;
   color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
