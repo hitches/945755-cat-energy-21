@@ -51,4 +51,12 @@
   &:focus {
     border: 2px solid #e7e7e7;
   }
+
+  &:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid red;
+  }
+
+  &:valid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid blue;
+  }
 }

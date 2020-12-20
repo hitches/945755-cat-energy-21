@@ -50,6 +50,10 @@
   }
 }
 
+.information-radio__checkbox + label:hover::before {
+  border: 1px solid #bababa;
+}
+
 .information-radio__checkbox:checked + label::after {
   content: "";
   position: absolute;

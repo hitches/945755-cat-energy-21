@@ -14,7 +14,9 @@
 }
 
 .site-list__item--active {
-  border-bottom: 2px solid #68b738;
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid #68b738;
+  }
 }
 
 .site-list__item:not(:last-child) {
@@ -53,8 +55,6 @@
 }
 
 .site-list__index-item--active {
-  border-bottom: none;
-
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid #ffffff;
   }
