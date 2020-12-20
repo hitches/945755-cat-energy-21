@@ -134,3 +134,7 @@
     top: 8px;
   }
 }
+
+.information-extra__checkbox:disabled + label {
+  opacity: 0.3;
+}

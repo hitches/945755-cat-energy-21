@@ -56,7 +56,7 @@
     border: 2px solid red;
   }
 
-  &:valid:not(:focus):not(:placeholder-shown) {
-    border: 2px solid blue;
+  &:focus::placeholder {
+    color: transparent;
   }
 }
