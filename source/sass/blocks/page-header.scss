@@ -2,8 +2,6 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
   min-height: 66px;
 
   @media (min-width: $tablet-width) {
@@ -29,6 +27,7 @@
 
 .page-header__logo {
   width: 230px;
+  padding-left: 20px;
 
   &:hover {
     opacity: 0.8;
@@ -40,6 +39,7 @@
 
   @media (min-width: $tablet-width) {
     width: 175px;
+    padding-left: 0;
   }
 
   @media (min-width: $tablet-width) {
