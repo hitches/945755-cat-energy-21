@@ -23,8 +23,19 @@
 }
 
 .page-footer__logo {
-  margin-bottom: 32px;
   text-align: center;
+
+  @media (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__link {

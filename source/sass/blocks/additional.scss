@@ -59,7 +59,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 0;
+    flex-shrink: 0;
   }
 }
 
@@ -206,4 +206,14 @@
   height: 80px;
   top: 65px;
   left: 40px;
+
+  @media (min-width: $tablet-width) {
+    top: 40%;
+    left: 10%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 65px;
+    left: 40px;
+  }
 }

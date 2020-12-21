@@ -11,14 +11,14 @@
 <body class="page">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+      <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»" href="index.html">
         <img src="img/img-logotype-mobile.svg" width="230" height="58"
           alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
       </a>
-      <nav class="site-nav">
-        <button class="site-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <nav class="site-nav site-nav--closed main-nav--nojs">
+        <button class="site-nav__toggle" type="button" aria-label="Открыть/Закрыть меню"></button>
         <ul class="site-nav__list site-list">
-          <li class="site-list__item site-list__item">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
@@ -44,7 +44,7 @@
           <ul class="information-data__group">
             <li class="information-data__input">
               <label class="information-data__label" for="name">Имя:<sup>*</sup></label><input
-                class="information-data__rectangle" type="text" required name="Имя" placeholder="Барсик" id="name">
+                class="information-data__rectangle" type="text" required name="Имя" placeholder="Барсик" id="name" pattern="\D [^0-9]">
             </li>
             <li class="information-data__input">
               <label class="information-data__label" for="weight">Вес (кг):<sup>*</sup></label><input
@@ -90,7 +90,7 @@
           <li class="information-details__input">
             <label class="information-details__label" for="telephone">Телефон:<sup>*</sup></label><input
               class="information-details__rectangle" type="tel" required name="telephonenumber"
-              placeholder="8 (960) 900-60-90" id="telephone">
+              placeholder="8 (960) 900-60-90" id="telephone" pattern="([0-9]{9}|8[0-9]{10})">
           </li>
         </ul>
       </fieldset>
@@ -178,6 +178,22 @@
       </a>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.site-nav');
+    var navToggle = navMain.querySelector('.site-nav__toggle');
+
+    navMain.classList.remove('site-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('site-nav--closed')) {
+        navMain.classList.remove('site-nav--closed');
+        navMain.classList.toggle('site-nav--opened');
+      } else {
+        navMain.classList.add('site-nav--closed');
+        navMain.classList.remove('site-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>

@@ -4,8 +4,9 @@
   margin-bottom: 27px;
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    max-width: 1220px;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 110px;
     margin: 0 auto;
   }
 }
@@ -24,20 +25,31 @@
 
 .catalogs__item {
   padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   position: relative;
+  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
+    min-height: 372px;
     padding-left: 52px;
+    padding-top: 77px;
+    padding-bottom: 53px;
     margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    max-width: 570px;
+    min-height: 374px;
+    padding-left: 52px;
+    margin: 0;
   }
 }
 
 .catalogs__item:not(:last-child) {
+  margin-bottom: 20px;
+
   @media (min-width: $desktop-width) {
-    padding-left: 52px;
+    margin-bottom: 0;
   }
 }

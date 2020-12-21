@@ -28,6 +28,7 @@
 .page-header__logo {
   width: 230px;
   padding-left: 20px;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.8;
@@ -42,7 +43,7 @@
     padding-left: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 202px;
   }
 }
