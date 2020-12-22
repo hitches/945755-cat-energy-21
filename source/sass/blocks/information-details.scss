@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .information-details__strip {
@@ -88,6 +92,7 @@
 
   @media (min-width: $desktop-width) {
     width: 500px;
+    margin-bottom: 0;
   }
 }
 
@@ -100,13 +105,14 @@
   color: #444444;
   font-style: $font-oswald;
   font-weight: 400;
+  outline: none;
 
   &:hover {
     border: 1px solid #cdcdcd;
   }
 
   &:focus {
-    border: 2px solid #e7e7e7;
+    border: 2px solid #444444;
   }
 
   &:invalid:not(:focus):not(:placeholder-shown) {

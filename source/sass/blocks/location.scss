@@ -7,9 +7,10 @@
   margin-top: 25px;
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 110px;
     margin: 0 auto;
-    position: relative;
   }
 }
 

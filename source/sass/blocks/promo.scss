@@ -1,5 +1,9 @@
 .promo {
   margin-bottom: 210px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .promo::before {
@@ -36,8 +40,11 @@
   background-color: $green;
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 110px;
     margin: 0 auto;
+    background: none;
   }
 }
 
@@ -182,6 +189,7 @@
 .promo__can {
   position: absolute;
   top: 165px;
+  left: calc(50% - 140px);
 
   @media (min-width: $tablet-width) {
     display: none;

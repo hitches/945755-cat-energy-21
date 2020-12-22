@@ -1,7 +1,9 @@
 .form__wrapper {
   @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 110px;
     margin: 0 auto;
-    width: 1220px;
   }
 }
 
