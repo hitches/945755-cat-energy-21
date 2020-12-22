@@ -30,6 +30,7 @@
 .information-radio__group label {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .information-radio__checkbox + label::before {
