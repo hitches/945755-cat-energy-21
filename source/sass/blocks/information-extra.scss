@@ -96,6 +96,7 @@
 .information-extra__option label {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .information-extra__checkbox + label::before {

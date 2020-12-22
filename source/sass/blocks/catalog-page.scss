@@ -3,6 +3,10 @@
   line-height: 1;
   font-weight: 400;
 
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
   }
