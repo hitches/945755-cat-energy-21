@@ -135,20 +135,32 @@
   line-height: 1.25;
   width: 100%;
   min-height: 289px;
-  background-image: url("../img/price@1x.jpg");
+  background-image: url("../img/gift1@1x.jpg");
   background-size: cover;
   color: #ffffff;
   margin-bottom: 63px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift1@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 200px;
     background-image: url("../img/price@2x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift2@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 289px;
     background-image: url("../img/price@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift1@2x.jpg");
+    }
   }
 }
 

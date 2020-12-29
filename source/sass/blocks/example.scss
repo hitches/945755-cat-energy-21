@@ -70,8 +70,9 @@
 
 .example__slider {
   margin-bottom: 25px;
+  position: relative;
 
   @media (min-width: $desktop-width) {
-    min-width: 690px;
+    width: 690px;
   }
 }
