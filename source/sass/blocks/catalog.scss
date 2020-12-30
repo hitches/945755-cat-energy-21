@@ -52,6 +52,7 @@
 
 .catalog__cart {
   display: flex;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -140,7 +141,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 110px;
+    padding-top: 220px;
   }
 }
 
@@ -158,6 +159,6 @@
   @media (min-width: $desktop-width) {
     padding-left: 6px;
     padding-right: 6px;
-    margin-bottom: 180px;
+    margin-bottom: 80px;
   }
 }

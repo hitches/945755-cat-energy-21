@@ -11,9 +11,13 @@
 <body class="page">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»" href="index.html">
-        <img src="img/img-logotype-mobile.svg" width="230" height="58"
-          alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+      <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="230" height="58"
+            alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+        </picture>
       </a>
       <nav class="site-nav site-nav--closed main-nav--nojs">
         <button class="site-nav__toggle" type="button" aria-label="Открыть/Закрыть меню"></button>
@@ -163,13 +167,19 @@
       </div>
       <ul class="social__list social">
         <li class="social__item">
-          <a class="social__link" href="#" aria-label="Мы в Вконтакте"></a>
+          <a class="social__link" href="#" aria-label="Мы в Вконтакте">
+            <img src="img/icon_vkontakte.svg" width="23px" height="16px" alt="vk">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#" aria-label="Мы в Фейсбуке"></a>
+          <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
+            <img src="img/icon_instagram.svg" width="16px" height="22px" alt="instagram">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#" aria-label="Мы в Инстаграме"></a>
+          <a class="social__link" href="#" aria-label="Мы в Инстаграме">
+            <img src="img/icon_facebook.svg" width="22px" height="22px" alt="facebook">
+          </a>
         </li>
       </ul>
       <a class="page-footer__link copyright" href="https://htmlacademy.ru/intensive/adaptive" title="html-accademy">
@@ -178,22 +188,7 @@
       </a>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.site-nav');
-    var navToggle = navMain.querySelector('.site-nav__toggle');
-
-    navMain.classList.remove('site-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('site-nav--closed')) {
-        navMain.classList.remove('site-nav--closed');
-        navMain.classList.toggle('site-nav--opened');
-      } else {
-        navMain.classList.add('site-nav--closed');
-        navMain.classList.remove('site-nav--opened');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

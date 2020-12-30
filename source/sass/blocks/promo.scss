@@ -11,14 +11,18 @@
     content: "";
     position: absolute;
     background-color: #68b738;
-    background-image: url("../img/background-desktop.jpg");
+    background-image: url("../img/index-background-desktop1@1x.jpg");
     width: 50%;
     height: 694px;
     background-size: cover;
     right: 0;
     top: 0;
-    z-index: 11;
+    z-index: 9;
     opacity: 0.2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop1@2x.jpg");
+    }
   }
 }
 
@@ -31,13 +35,17 @@
     height: 694px;
     right: 0;
     top: 0;
-    z-index: 10;
+    z-index: 8;
   }
 }
 
 .promo__wrapper {
   position: relative;
   background-color: $green;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
@@ -52,13 +60,17 @@
   @media (max-width: 767px) {
     content: "";
     position: absolute;
-    background-image: url("../img/halfcat@1x.png");
+    background-image: url("../img/index-background-mobile2@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
     width: 100%;
     height: 100%;
     opacity: 0.15;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile2@2x.jpg");
+    }
   }
 }
 
@@ -83,6 +95,7 @@
   }
 }
 
+/*
 .promo__header::before {
   @media (min-width: $desktop-width) {
     content: "";
@@ -97,7 +110,7 @@
     top: -80px;
   }
 }
-
+*/
 
 .promo__heading {
   width: 290px;
@@ -140,6 +153,8 @@
     text-align: left;
     margin-bottom: 49px;
     padding-left: 117px;
+    position: relative;
+    z-index: 11;
   }
 
   @media (min-width: $desktop-width) {
@@ -186,31 +201,24 @@
   }
 }
 
-.promo__can {
-  position: absolute;
-  top: 165px;
-  left: calc(50% - 140px);
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .promo__can-wrapper {
-  @media (min-width: $tablet-width) {
-    padding-top: 20px;
-    background-image: url("../img/can-tablet.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 709px;
-    height: 609px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: none;
-  }
+  z-index: 11;
+  position: relative;
 }
 
 .promo__logo {
+  position: absolute;
+  top: 165px;
+  left: calc(50% - 140px);
   z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    top: 215px;
+    left: calc(50% - 355px);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -80px;
+    left: 450px;
+  }
 }

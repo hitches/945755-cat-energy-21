@@ -12,8 +12,12 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" title="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
-        <img src="img/img-logotype-mobile.svg" width="230" height="58"
-          alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="230" height="58"
+            alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+        </picture>
       </a>
       <nav class="site-nav site-nav--closed main-nav--nojs">
         <button class="site-nav__toggle" type="button" aria-label="Открыть/Закрыть меню"></button>
@@ -40,9 +44,16 @@
           <div class="promo__can-wrapper">
             <a class="promo__button button" href="#">Подобрать программу</a>
           </div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index-can@1x.png 1x, img/index-can@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/index-can-tablet1@1x.png 1x, img/index-can-tablet1@2x.png 2x">
+            <img class="promo__logo" alt="Питание для котов" src="img/index-can-mobile1@1x.png"
+              srcset="img/index-can-mobile1@2x.png 2x">
+          </picture>
         </div>
         <div class="promo__can">
-          <img class="promo__logo" alt="Питание для котов" src="img/header-logo@1x.png" width="280px" height="270px">
+
         </div>
       </div>
     </section>
@@ -110,12 +121,15 @@
             <p class="example__price">Затраты на питание: <span class="example__coast">15000 руб.</span></p>
           </div>
         </div>
-        <div class="example__slider slider">
-          <div class="example__image">
-            <img src="img/before@1x.jpg" alt="До" width="311px" height="232px">
+        <div class="example__slider slider" id="slider">
+          <div class="slider__image">
+            <img src="img/before-mobile1@1x.png" srcset="img/before-mobile1@2x.png 2x" alt="До">
           </div>
-          <div class="example__image">
-            <img src="img/after@1x.jpg" alt="После" width="251px" height="240px">
+          <img src="img/after-mobile1@1x.png" srcset="img/after-mobile1@2x.png 2x" alt="После">
+          <button class="slider__button"></button>
+          <div class="slider__text">
+            <p>Было</p>
+            <p>Стало</p>
           </div>
         </div>
       </div>
@@ -130,8 +144,13 @@
           </address>
         </div>
         <div class="location__map">
-          <img src="img/map@1x.jpg" width="320px" height="362px" alt="ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/location-desktop@1x.jpg 1x, img/location-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/location-tablet@1x.jpg 1x, img/location-tablet@2x.jpg 2x">
+            <img src="img/location@1x.jpg" srcset="img/location@2x.jpg 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
         </div>
       </div>
     </section>
@@ -164,22 +183,7 @@
       </a>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.site-nav');
-    var navToggle = navMain.querySelector('.site-nav__toggle');
-
-    navMain.classList.remove('site-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('site-nav--closed')) {
-        navMain.classList.remove('site-nav--closed');
-        navMain.classList.toggle('site-nav--opened');
-      } else {
-        navMain.classList.add('site-nav--closed');
-        navMain.classList.remove('site-nav--opened');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
