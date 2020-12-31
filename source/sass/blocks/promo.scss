@@ -213,11 +213,15 @@
   z-index: 10;
 
   @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
     top: 215px;
     left: calc(50% - 355px);
   }
 
   @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 449px;
     top: -80px;
     left: 450px;
   }

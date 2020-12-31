@@ -1,6 +1,15 @@
 .slider__text {
+  padding-top: 270px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 570px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 600px;
+  }
 }
 
 .slider__button {
@@ -41,4 +50,46 @@
   height: 8px;
   border-radius: 50%;
   background-color: #68b738;
+}
+
+.slider {
+  position: relative;
+  min-height: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 677px;
+    min-height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 677px;
+    min-height: 656px;
+  }
+}
+
+.slider__image {
+  position: absolute;
+}
+
+.slider__image--first {
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  }
+}
+
+.slider__image--second {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    clip-path: polygon(44% 0, 100% 0, 100% 100%, 44% 100%);
+    left: 98px;
+  }
+
+  @media (min-width: $desktop-width) {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    left: 66px;
+  }
 }

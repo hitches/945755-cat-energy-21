@@ -154,8 +154,13 @@
           </address>
         </div>
         <div class="location__map">
-          <img src="img/map@1x.jpg" width="320px" height="362px" alt="ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/location-desktop@1x.jpg 1x, img/location-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/location-tablet@1x.jpg 1x, img/location-tablet@2x.jpg 2x">
+            <img class="location__img" src="img/location@1x.jpg" srcset="img/location@2x.jpg 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
         </div>
       </div>
     </section>
@@ -163,7 +168,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <img src="img/footer-logo2.svg" width="128px" height="24px">
+        <img src="img/footer-logo2.svg" width="128px" height="24px" alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
       </div>
       <ul class="social__list social">
         <li class="social__item">

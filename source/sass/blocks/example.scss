@@ -3,10 +3,22 @@
 }
 
 .example__wrapper {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }
+}
+
+.example__text {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
@@ -23,6 +35,11 @@
 
 .example__title {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .example__description {

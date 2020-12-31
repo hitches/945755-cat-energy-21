@@ -59,19 +59,67 @@
 }
 
 .features__item:nth-child(1)::before {
-  background-image: url("../img/Group1.png");
+  background-image: url("../img/Group1@1x.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Group1@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/Group1-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Group1-tablet@2x.png");
+    }
+  }
 }
 
 .features__item:nth-child(2)::before {
-  background-image: url("../img/Group2.png");
+  background-image: url("../img/Group2@1x.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Group2@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/Group2-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Group2-tablet@2x.png");
+    }
+  }
 }
 
 .features__item:nth-child(3)::before {
-  background-image: url("../img/Group3.png");
+  background-image: url("../img/Group3@1x.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Group3@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/Group3-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Group3-tablet@2x.png");
+    }
+  }
 }
 
 .features__item:nth-child(4)::before {
-  background-image: url("../img/Group4.png");
+  background-image: url("../img/Group4@1x.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Group4@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/Group4-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Group4-tablet@2x.png");
+    }
+  }
 }
 
 .features__descriptions {

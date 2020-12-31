@@ -49,11 +49,8 @@
             <source media="(min-width: 768px)"
               srcset="img/index-can-tablet1@1x.png 1x, img/index-can-tablet1@2x.png 2x">
             <img class="promo__logo" alt="Питание для котов" src="img/index-can-mobile1@1x.png"
-              srcset="img/index-can-mobile1@2x.png 2x">
+              srcset="img/index-can-mobile1@2x.png 2x" width="280px" height="270px">
           </picture>
-        </div>
-        <div class="promo__can">
-
         </div>
       </div>
     </section>
@@ -122,10 +119,20 @@
           </div>
         </div>
         <div class="example__slider slider" id="slider">
-          <div class="slider__image">
-            <img src="img/before-mobile1@1x.png" srcset="img/before-mobile1@2x.png 2x" alt="До">
+          <div class="slider__image slider__image--first">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/cat-fat@1x.png 1x, img/cat-fat@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-fat@1x.png 1x, img/cat-fat@2x.png 2x">
+              <img src="img/before-mobile1@1x.png" srcset="img/before-mobile1@2x.png 2x" alt="До">
+            </picture>
           </div>
-          <img src="img/after-mobile1@1x.png" srcset="img/after-mobile1@2x.png 2x" alt="После">
+          <div class="slider__image slider__image--second">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/cat-skinny@1x.png 1x, img/cat-skinny@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-skinny@1x.png 1x, img/cat-skinny@2x.png 2x">
+              <img src="img/after-mobile1@1x.png" srcset="img/after-mobile1@2x.png 2x" alt="После">
+            </picture>
+          </div>
           <button class="slider__button"></button>
           <div class="slider__text">
             <p>Было</p>
@@ -145,11 +152,10 @@
         </div>
         <div class="location__map">
           <picture>
-            <source media="(min-width: 1440px)"
-              srcset="img/location-desktop@1x.jpg 1x, img/location-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/location-tablet@1x.jpg 1x, img/location-tablet@2x.jpg 2x">
-            <img src="img/location@1x.jpg" srcset="img/location@2x.jpg 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <source media="(min-width: 1440px)" srcset="img/location-desktop@1x.jpg 1x, img/location-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/location-tablet@1x.jpg 1x, img/location-tablet@2x.jpg 2x">
+            <img class="location__img" src="img/location@1x.jpg" srcset="img/location@2x.jpg 2x"
+              alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320px" height="363px">
           </picture>
         </div>
       </div>
@@ -158,7 +164,8 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <img src="img/footer-logo2.svg" width="128px" height="24px">
+        <img src="img/footer-logo2.svg" width="128px" height="24px"
+          alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
       </div>
       <ul class="social__list social">
         <li class="social__item">

@@ -109,7 +109,7 @@
           <div class="catalog__cart">
             <a class="catalog__link-image" href="description.html">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog-3-desktop1@1x.png 1x, img/catalog-3-desktop1@2x.png 2x">
+                <source media="(min-width: 1440px)" srcset="img/catalog-3-desktop@1x.png 1x, img/catalog-3-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-3-tablet1@1x.png 1x, img/catalog-3-tablet1@2x.png 2x">
                 <img class="catalog__image" src="img/catalog-3-mobile1@1x.png"
                   srcset="img/catalog-3-mobile1@2x.png 2x">
@@ -173,7 +173,7 @@
           <div class="catalog__cart">
             <a class="catalog__link-image" href="description.html">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog-5-desktop1@1x.png 1x, img/catalog-5-desktop1@2x.png 2x">
+                <source media="(min-width: 1440px)" srcset="img/catalog-5-desktop@1x.png 1x, img/catalog-5-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-5-tablet1@1x.png 1x, img/catalog-5-tablet1@2x.png 2x">
                 <img class="catalog__image" src="img/catalog-5-mobile1@1x.png"
                   srcset="img/catalog-5-mobile1@2x.png 2x">
@@ -205,7 +205,7 @@
           <div class="catalog__cart">
             <a class="catalog__link-image" href="description.html">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog-6-desktop1@1x.png 1x, img/catalog-6-desktop1@2x.png 2x">
+                <source media="(min-width: 1440px)" srcset="img/catalog-6-desktop@1x.png 1x, img/catalog-6-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-6-tablet1@1x.png 1x, img/catalog-6-tablet1@2x.png 2x">
                 <img class="catalog__image" src="img/catalog-6-mobile1@1x.png"
                   srcset="img/catalog-6-mobile1@2x.png 2x">
@@ -237,7 +237,7 @@
           <div class="catalog__cart">
             <a class="catalog__link-image" href="description.html">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/catalog-7-desktop1@1x.png 1x, img/catalog-7-desktop1@2x.png 2x">
+                <source media="(min-width: 1440px)" srcset="img/catalog-7-desktop@1x.png 1x, img/catalog-7-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog-7-tablet1@1x.png 1x, img/catalog-7-tablet1@2x.png 2x">
                 <img class="catalog__image" src="img/catalog-7-mobile1@1x.png"
                   srcset="img/catalog-7-mobile1@2x.png 2x">
@@ -326,8 +326,13 @@
           </address>
         </div>
         <div class="location__map">
-          <img src="img/map@1x.jpg" width="320px" height="362px" alt="ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/location-desktop@1x.jpg 1x, img/location-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/location-tablet@1x.jpg 1x, img/location-tablet@2x.jpg 2x">
+            <img class="location__img" src="img/location@1x.jpg" srcset="img/location@2x.jpg 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
         </div>
       </div>
     </section>
@@ -335,7 +340,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <img src="img/footer-logo2.svg" width="128px" height="24px">
+        <img src="img/footer-logo2.svg" width="128px" height="24px" alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
       </div>
       <ul class="social__list social">
         <li class="social__item">
