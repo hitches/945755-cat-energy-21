@@ -1,9 +1,12 @@
 .slider__text {
+  width: 228px;
+  margin: 0 auto;
   padding-top: 270px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     padding-top: 570px;
   }
 
@@ -12,44 +15,73 @@
   }
 }
 
-.slider__button {
-  padding: 0;
-  position: absolute;
-  bottom: 18px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 84px;
-  height: 6px;
-  border: 3px solid #dcdcdc;
-  border-radius: 3px;
-  background-color: #dcdcdc;
-  outline: none;
+.slider__span {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.slider__button-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 0;
+    content: "";
+    top: 592px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 6px;
+    border: 3px solid #dcdcdc;
+    border-radius: 3px;
+    background-color: #dcdcdc;
+    outline: none;
     width: 75%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 622px;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  bottom: 33px;
+  left: calc(50% - 42px);
+  width: 84px;
+  height: 14px;
+  background-image: url("../img/slider.jpg");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
   }
 }
 
 .slider__button::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 15px);
-  left: calc(50% - 15px);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #ffffff;
-}
-
-.slider__button::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 4px);
-  left: calc(50% - 4px);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #68b738;
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
 }
 
 .slider {

@@ -1,9 +1,31 @@
+.stats {
+  position: relative;
+  width: 120px;
+}
+
+.stats::before {
+  content: "";
+  position: absolute;
+  width: 124px;
+  height: 56px;
+  background-image: url("../img/frame.svg");
+  top: -14px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+    background-image: url("../img/frame2.svg");
+    left: -20px;
+  }
+}
+
 .stats__number {
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 14px;
   text-align: center;
 }
 
@@ -13,4 +35,6 @@
   font-weight: 400;
   line-height: 1;
   text-align: center;
+  width: 80px;
+  margin: 0 auto;
 }

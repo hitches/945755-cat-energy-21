@@ -51,16 +51,17 @@
 }
 
 .example__list {
+  width: 279px;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   list-style: none;
   margin-bottom: 25px;
-}
 
-.example__item {
-  margin-right: 50px;
+  @media (min-width: $tablet-width) {
+    width: 366px;
+  }
 }
 
 .example__price {
