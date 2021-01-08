@@ -23,6 +23,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
+    border-bottom: 1px dashed rgba($color: #000000, $alpha: 0.24);
   }
 }
 
@@ -87,13 +88,19 @@
 .slider {
   position: relative;
   min-height: 320px;
+  padding-left: calc(50% - 155px);
+  padding-right: calc(50% - 155px);
 
   @media (min-width: $tablet-width) {
     min-width: 677px;
     min-height: 620px;
+    padding-left: calc(50% - 338px);
+    padding-right: calc(50% - 338px);
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
     min-width: 677px;
     min-height: 656px;
   }
@@ -117,7 +124,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     clip-path: polygon(44% 0, 100% 0, 100% 100%, 44% 100%);
-    left: 98px;
+    left: calc(50% - 272px);
   }
 
   @media (min-width: $desktop-width) {
