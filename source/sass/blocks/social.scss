@@ -22,6 +22,19 @@
   display: block;
   box-sizing: border-box;
   height: 16px;
+  stroke: #666666;
+  fill: #666666;
+
+  &:hover {
+    stroke: #68b738;
+    fill: #68b738;
+  }
+
+  &:focus {
+    stroke: #68b738;
+    fill: #68b738;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     height: 33px;
