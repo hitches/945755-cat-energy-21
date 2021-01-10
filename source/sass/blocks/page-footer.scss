@@ -42,6 +42,19 @@
   display: flex;
   justify-content: space-between;
   height: 27px;
+  fill: #666666;
+  color: #444444;
+
+  &:hover {
+    fill: #68b738;
+    color: #68b738;
+  }
+
+  &:focus {
+    fill: #68b738;
+    color: #68b738;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 163px;

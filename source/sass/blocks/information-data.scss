@@ -11,7 +11,7 @@
     line-height: 1.5;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 50%;
   }
 }
@@ -20,6 +20,8 @@
   font-size: 16px;
   line-height: 1.13;
   margin-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -36,6 +38,7 @@
 
 .information-data__label {
   margin-right: 14px;
+  min-width: 65px;
 }
 
 .information-data__rectangle {
@@ -44,6 +47,7 @@
   font-style: $font-oswald;
   font-weight: 400;
   outline: none;
+  width: 100%;
 
   &:hover {
     border: 1px solid #cdcdcd;
