@@ -33,7 +33,7 @@
 .site-nav--closed .site-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 17px;
   right: 15px;
   width: 24px;
   height: 2px;
@@ -145,11 +145,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     min-height: 36px;
-    padding-top: 14px;
+    padding-top: 19px;
     margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 26px;
+    padding-top: 21px;
+    width: 478px;
   }
 }

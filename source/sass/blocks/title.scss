@@ -1,11 +1,13 @@
 .title {
-  padding-top: 27px;
+  padding-top: 7px;
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 36px;
   line-height: 1.11;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding-top: 25px;
     font-size: 60px;
     line-height: 1;
   }

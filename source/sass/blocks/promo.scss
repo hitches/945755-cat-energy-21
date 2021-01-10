@@ -1,8 +1,8 @@
 .promo {
-  margin-bottom: 210px;
+  margin-bottom: 200px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 62px;
+    margin-bottom: 52px;
   }
 }
 
@@ -76,7 +76,7 @@
 
 .promo__header {
   margin: 0;
-  padding: 0 16px;
+  padding: 0 20px;
 
   width: auto;
   height: 302px;
@@ -85,12 +85,12 @@
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
-    margin-bottom: 650px;
+    margin-bottom: 558px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    padding-left: 60px;
+    padding-left: 80px;
     min-height: 500px;
   }
 }
@@ -113,14 +113,14 @@
 */
 
 .promo__heading {
-  width: 290px;
+  width: 280px;
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 27px;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -129,22 +129,24 @@
     width: 550px;
     margin: 0;
     text-align: left;
-    padding-left: 117px;
+    padding-left: 97px;
+    padding-top: 50px;
     margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 41px;
+    margin-bottom: 39px;
     padding: 0;
   }
 }
 
 .promo__slogan {
   margin: 0;
-  margin-bottom: 320px;
+  margin-bottom: 302px;
   font-size: 14px;
   line-height: 1;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
@@ -152,13 +154,14 @@
     color: #000000;
     text-align: left;
     margin-bottom: 49px;
-    padding-left: 117px;
+    padding-left: 98px;
     position: relative;
     z-index: 11;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-bottom: 53px;
   }
 }
 
@@ -192,8 +195,11 @@
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    margin-left: 117px;
+    width: 244px;
+    min-height: 54px;
+    margin-left: 92px;
+    font-size: 20px;
+    line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -208,21 +214,21 @@
 
 .promo__logo {
   position: absolute;
-  top: 165px;
+  top: 167px;
   left: calc(50% - 140px);
   z-index: 10;
 
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
-    top: 215px;
+    top: 251px;
     left: calc(50% - 355px);
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
-    height: 449px;
-    top: -80px;
-    left: 450px;
+    height: 499px;
+    top: -81px;
+    left: 448px;
   }
 }

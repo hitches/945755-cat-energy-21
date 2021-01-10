@@ -4,8 +4,6 @@
 }
 
 .location__wrapper {
-  margin-top: 25px;
-
   @media (min-width: $desktop-width) {
     width: 100%;
     margin: 0 auto;
@@ -14,7 +12,7 @@
 
 .location__info {
   text-align: left;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
   padding-left: 19px;
@@ -23,6 +21,8 @@
   @media (min-width: $tablet-width) {
     padding-left: 71px;
     padding-right: 71px;
+    padding-top: 37px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,12 +39,18 @@
 }
 
 .location__dilers {
-  width: 172px;
+  width: 162px;
   margin: 0;
   font-size: 16px;
-  line-height: 1.12;
+  line-height: 1.25;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.25;
+    padding-top: 2px;
+  }
 }
 
 .location__address {
@@ -54,6 +60,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.43;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+  }
 }
 
 .location__img {

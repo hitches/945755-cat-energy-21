@@ -21,13 +21,14 @@
     margin: 0 auto;
     padding: 0;
     padding-top: 53px;
-    padding-bottom: 111px;
+    padding-bottom: 113px;
   }
 }
 
 .page-header__logo {
   width: 230px;
   padding-left: 20px;
+  padding-top: 10px;
   cursor: pointer;
 
   &:hover {
@@ -40,7 +41,7 @@
 
   @media (min-width: $tablet-width) {
     width: 175px;
-    padding-left: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {

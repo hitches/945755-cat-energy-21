@@ -1,13 +1,13 @@
 .slider__text {
-  width: 228px;
+  width: 200px;
   margin: 0 auto;
-  padding-top: 270px;
+  padding-top: 265px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    padding-top: 570px;
+    min-width: 574px;
+    padding-top: 355px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,7 +32,7 @@
     position: relative;
     padding: 0;
     content: "";
-    top: 592px;
+    top: 377px;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 6px;
@@ -40,7 +40,7 @@
     border-radius: 3px;
     background-color: #dcdcdc;
     outline: none;
-    width: 75%;
+    width: 63%;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,8 +50,8 @@
 
 .slider__button {
   position: absolute;
-  bottom: 33px;
-  left: calc(50% - 42px);
+  bottom: 39px;
+  left: calc(50% - 40px);
   width: 84px;
   height: 14px;
   background-image: url("../img/slider.jpg");
@@ -88,12 +88,12 @@
 .slider {
   position: relative;
   min-height: 320px;
-  padding-left: calc(50% - 155px);
-  padding-right: calc(50% - 155px);
+  padding-left: calc(50% - 160px);
+  padding-right: calc(50% - 160px);
 
   @media (min-width: $tablet-width) {
     min-width: 677px;
-    min-height: 620px;
+    min-height: 460px;
     padding-left: calc(50% - 338px);
     padding-right: calc(50% - 338px);
   }
@@ -115,6 +115,7 @@
 
   @media (min-width: $tablet-width) {
     clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    top: -173px;
   }
 }
 
@@ -123,8 +124,9 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    clip-path: polygon(44% 0, 100% 0, 100% 100%, 44% 100%);
-    left: calc(50% - 272px);
+    clip-path: polygon(45% 0, 100% 0, 100% 100%, 45% 100%);
+    left: calc(50% - 247px);
+    top: -173px;
   }
 
   @media (min-width: $desktop-width) {
