@@ -1,6 +1,6 @@
 .stats {
   position: relative;
-  width: 120px;
+  width: 122px;
 }
 
 .stats::before {
@@ -16,6 +16,7 @@
     height: 72px;
     background-image: url("../img/frame2.svg");
     left: -20px;
+    top: -16px;
   }
 }
 
@@ -25,8 +26,14 @@
   line-height: 1;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 13px;
+  }
 }
 
 .stats__info {
@@ -37,4 +44,9 @@
   text-align: center;
   width: 80px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 129px;
+    font-size: 14px;
+  }
 }

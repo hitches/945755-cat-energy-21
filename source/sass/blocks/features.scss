@@ -1,20 +1,30 @@
 .features__title {
-  margin-bottom: 38px;
+  margin-bottom: 41px;
   font-size: 36px;
   line-height: 1.11;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+  }
 }
 
 .features__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,24 +35,24 @@
 .features__item {
   padding-left: 80px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   min-height: 55px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    width: 50%;
-    padding-top: 55px;
-    margin-bottom: 94px;
+    width: 45.8%;
+    padding-top: 127px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
+    padding-top: 126px;
   }
 }
 
 .features__item:not(:last-child) {
   @media (min-width: $desktop-width) {
-    margin-right: 40px;
+    margin-right: 80px;
   }
 }
 
@@ -54,22 +64,34 @@
   background-size: cover;
   width: 60px;
   height: 60px;
-  top: -5px;
+  top: -2px;
   left: 0;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    top: -25px;
+    top: 31px;
   }
 }
 
-.features__item:nth-child(1)::before {
-  background-image: url("../img/Group1.svg");
+.features__item:nth-child(1){
+  &::before {
+    background-image: url("../img/Group1.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 86px;
+  }
 }
 
-.features__item:nth-child(2)::before {
-  background-image: url("../img/Group2.svg");
+.features__item:nth-child(2){
+  &::before {
+    background-image: url("../img/Group2.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 86px;
+  }
 }
 
 .features__item:nth-child(3)::before {
@@ -88,10 +110,12 @@
   width: 97%;
 
   @media (min-width: $tablet-width) {
-    width: 65%;
+    width: 70%;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   @media (min-width: $desktop-width) {
-    width: 78%;
+    width: auto;
   }
 }
