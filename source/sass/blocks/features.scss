@@ -74,7 +74,7 @@
   }
 }
 
-.features__item:nth-child(1){
+.features__item:nth-child(1) {
   &::before {
     background-image: url("../img/Group1.svg");
   }
@@ -82,15 +82,23 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 86px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
 }
 
-.features__item:nth-child(2){
+.features__item:nth-child(2) {
   &::before {
     background-image: url("../img/Group2.svg");
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
   }
 }
 

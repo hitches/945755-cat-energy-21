@@ -29,7 +29,7 @@
     margin-left: 110px;
     padding-left: 76px;
     padding-right: 76px;
-    padding-top: 67px;
+    padding-top: 64px;
     position: absolute;
     top: 95px;
     width: 570px;
@@ -51,6 +51,10 @@
     line-height: 1.25;
     padding-top: 2px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3;
+  }
 }
 
 .location__address {
@@ -65,6 +69,11 @@
     font-size: 16px;
     line-height: 1.25;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    text-align: left;
   }
 }
 
