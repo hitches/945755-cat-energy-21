@@ -1,6 +1,11 @@
 .location {
   position: relative;
-  margin-bottom: 39px;
+  background-color: #f2f2f2;
+  padding-top: 26px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .location__wrapper {
@@ -12,7 +17,7 @@
 
 .location__info {
   text-align: left;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   display: flex;
   justify-content: space-between;
   padding-left: 19px;

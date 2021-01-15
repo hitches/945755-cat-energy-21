@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
   border: none;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 }
 
@@ -26,7 +31,7 @@
   border-width: 0 10px;
 
   @media (min-width: $tablet-width) {
-    top: 20px;
+    top: 22px;
   }
 }
 
@@ -47,7 +52,7 @@
   width: 221px;
   font-size: 24px;
   line-height: 1.08;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   background-color: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
@@ -58,6 +63,7 @@
     line-height: 1;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 76px;
   }
 }
 
@@ -65,7 +71,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left: 20px;
+  padding-left: 19px;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
@@ -91,10 +97,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 500px;
+    width: 572px;
     margin-bottom: 0;
   }
 }
@@ -105,13 +112,17 @@
   text-transform: uppercase;
   width: 65px;
   margin-right: 14px;
-  padding-top: 15px;
+  padding-top: 11px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
     width: 75px;
     padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
   }
 }
 
@@ -120,9 +131,11 @@
   color: #444444;
   font-family: $font-oswald;
   font-weight: 400;
+  text-transform: uppercase;
   outline: none;
   width: 100%;
   height: 45px;
+  padding-left: 13px;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -149,6 +162,15 @@
     stroke: #ff8282;
     fill: #ff8282;
   }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    padding-left: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+  }
 }
 
 .information-details__icon {
@@ -159,4 +181,9 @@
   top: 15px;
   stroke: #222222;
   fill: #222222;
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+    top: 17px;
+  }
 }

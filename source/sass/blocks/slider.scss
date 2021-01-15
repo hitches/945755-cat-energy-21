@@ -13,6 +13,7 @@
   @media (min-width: $desktop-width) {
     min-width: 570px;
     padding-top: 493px;
+    z-index: 21;
   }
 }
 
@@ -25,6 +26,10 @@
     font-size: 20px;
     line-height: 1.5;
     border-bottom: 1px dashed rgba($color: #000000, $alpha: 0.24);
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 21;
   }
 }
 
@@ -47,6 +52,7 @@
   @media (min-width: $desktop-width) {
     top: 515px;
     width: 53%;
+    z-index: 21;
   }
 }
 
@@ -126,6 +132,7 @@
     clip-path: polygon(0 0, 54% 0, 54% 100%, 0 100%);
     top: -56px;
     left: 33px;
+    z-index: 21;
   }
 }
 
@@ -143,5 +150,6 @@
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
     left: 125px;
     top: -56px;
+    z-index: 21;
   }
 }

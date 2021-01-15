@@ -1,9 +1,9 @@
 .information-dispatch {
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-bottom: 72px;
+    margin-bottom: 50px;
     padding-left: 70px;
   }
 
@@ -12,7 +12,7 @@
     width: 100%;
     padding: 0 110px;
     margin: 0 auto;
-    margin-bottom: 82px;
+    margin-bottom: 59px;
   }
 }
 
@@ -20,8 +20,10 @@
   font-size: 16px;
   line-height: 1.25;
   width: 100%;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     width: auto;
     min-width: 282px;
     min-height: 52px;
@@ -36,12 +38,18 @@
   font-family: $font-arial;
   font-size: 14px;
   line-height: 1.14;
+  margin: 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     padding-left: 61px;
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 81px;
+    padding-left: 80px;
+    padding-top: 17px;
   }
 }
