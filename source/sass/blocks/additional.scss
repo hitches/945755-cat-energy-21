@@ -16,7 +16,11 @@
   border-width: 0 10px;
 
   @media (min-width: $tablet-width) {
-    top: 55px;
+    top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 43px;
   }
 }
 
@@ -35,23 +39,28 @@
 
 .additional__heading {
   width: auto;
+  margin: 0;
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
   background-color: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: auto;
     font-size: 36px;
     line-height: 1;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 37px;
+    padding-right: 36px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 440px;
+    width: 414px;
+    padding-left: 40px;
   }
 }
 
@@ -67,22 +76,61 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 57px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 68px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 870px;
+    width: 896px;
+    border: none;
   }
 }
 
 .additional__item {
+  border-top: 1px solid #cdcdcd;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 16px;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.additional__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
 .additional__item:not(:last-child) {
-  margin-bottom: 42px;
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
 }
 
 .additional__title {
@@ -90,9 +138,19 @@
   line-height: 1;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
+  padding-top: 13px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    padding-top: 25px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding-top: 16px;
   }
 }
 
@@ -104,16 +162,29 @@
   display: flex;
   justify-content: space-between;
   min-width: 200px;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+    padding-top: 29px;
+    margin-bottom: 22px;
+    justify-content: flex-end;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding-top: 23px;
+    width: 275px;
+    justify-content: space-between;
   }
 }
 
 .additional__span {
-  @media (min-width: $desktop-width) {
-    width: 60%;
+  @media (min-width: $tablet-width) {
     text-align: right;
+    margin-right: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,9 +194,13 @@
 
 .additional__button {
   width: 100%;
+  font-size: 16px;
+  line-height: 1.25;
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-top: 15px;
+    margin-left: 30px;
   }
 }
 
@@ -138,7 +213,7 @@
   background-image: url("../img/gift1@1x.jpg");
   background-size: cover;
   color: #ffffff;
-  margin-bottom: 63px;
+  margin-bottom: 36px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift1@2x.jpg");
@@ -146,6 +221,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
+    margin-bottom: 75px;
     background-image: url("../img/price@2x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -156,6 +232,7 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 289px;
+    margin-bottom: 86px;
     background-image: url("../img/price@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -180,9 +257,9 @@
   font-family: $font-arial;
   font-weight: 400;
   margin: 0 auto;
-  width: 160px;
+  width: 161px;
   text-align: center;
-  padding-top: 186px;
+  padding-top: 188px;
   padding-bottom: 20px;
   position: relative;
 
@@ -199,7 +276,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-top: 185px;
+    padding-top: 187px;
     padding-bottom: 20px;
     max-width: 163px;
     text-align: center;
@@ -216,16 +293,16 @@
   background-size: cover;
   width: 78px;
   height: 80px;
-  top: 65px;
-  left: 40px;
+  top: 58px;
+  left: 41px;
 
   @media (min-width: $tablet-width) {
-    top: 40%;
-    left: 10%;
+    top: 37%;
+    left: 11%;
   }
 
   @media (min-width: $desktop-width) {
-    top: 65px;
-    left: 40px;
+    top: 57px;
+    left: 45px;
   }
 }
