@@ -16,33 +16,6 @@
   }
 }
 
-.example__wrapper::before {
-  @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    background-color: #f2f2f2;
-    width: 72.5%;
-    height: 462px;
-    left: 0;
-    top: 136px;
-    z-index: 20;
-  }
-}
-
-.example__wrapper::after {
-  @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    background-color: #eaeaea;
-    width: 27.5%;
-    height: 462px;
-    right: 0;
-    top: 136px;
-    z-index: 20;
-  }
-}
-
-
 .example__text {
   padding-left: 20px;
   padding-right: 20px;
@@ -120,8 +93,7 @@
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    width: 346px;
-    padding-left: 20px;
+    width: 365px;
     padding-top: 3px;
   }
 
@@ -168,10 +140,34 @@
 }
 
 .example__slider {
-  margin-bottom: 1px;
   position: relative;
 
   @media (min-width: $desktop-width) {
     width: 690px;
+  }
+}
+
+.example__slider::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 1044px;
+    height: 100%;
+    left: -647px;
+    z-index: 20;
+  }
+}
+
+.example__slider::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-color: #eaeaea;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 20;
   }
 }

@@ -26,10 +26,6 @@
     flex-direction: row;
     margin-bottom: 62px;
   }
-
-  @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
-  }
 }
 
 .features__item {
@@ -46,6 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 245px;
     padding-left: 0;
     padding-top: 126px;
   }
