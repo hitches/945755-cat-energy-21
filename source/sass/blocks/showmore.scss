@@ -1,10 +1,36 @@
 .showmore {
+  padding-top: 78px;
+
   @media (min-width: $tablet-width) {
     width: 40%;
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: 245px;
+  }
+}
+
+.showmore::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: calc(100% + 17px);
+    height: 430px;
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
+    top: 125px;
+    left: -9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% + 25px);
+    top: 132px;
+    left: -13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -14,6 +40,9 @@
   padding-right: 20px;
   background-color: #f2f2f2;
   color: #444444;
+  font-size: 16px;
+  line-height: 1.25;
+  position: relative;
 
   &:hover {
     background-color: #ebebeb;

@@ -1,4 +1,5 @@
 .example {
+  position: relative;
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
@@ -15,6 +16,33 @@
   }
 }
 
+.example__wrapper::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 72.5%;
+    height: 462px;
+    left: 0;
+    top: 136px;
+    z-index: 20;
+  }
+}
+
+.example__wrapper::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-color: #eaeaea;
+    width: 27.5%;
+    height: 462px;
+    right: 0;
+    top: 136px;
+    z-index: 20;
+  }
+}
+
+
 .example__text {
   padding-left: 20px;
   padding-right: 20px;
@@ -26,8 +54,14 @@
     padding-top: 18px;
     margin-bottom: 225px;
   }
-}
 
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-bottom: 32px;
+    width: 50%;
+    z-index: 21;
+  }
+}
 
 .example__result {
   @media (min-width: $tablet-width) {
@@ -48,6 +82,12 @@
     line-height: 1;
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-left: 80px;
+    margin-bottom: 147px;
+  }
 }
 
 .example__description {
@@ -61,6 +101,12 @@
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    width: 510px;
+    margin-bottom: 81px;
   }
 }
 
@@ -77,6 +123,12 @@
     width: 346px;
     padding-left: 20px;
     padding-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 426px;
+    padding-left: 100px;
+    margin-bottom: 55px;
   }
 }
 
@@ -98,6 +150,8 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    text-align: left;
+    padding-left: 80px;
   }
 }
 
@@ -107,10 +161,14 @@
   @media (min-width: $tablet-width) {
     padding-top: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 59px;
+  }
 }
 
 .example__slider {
-  margin-bottom: 28px;
+  margin-bottom: 1px;
   position: relative;
 
   @media (min-width: $desktop-width) {
