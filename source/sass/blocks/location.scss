@@ -31,7 +31,7 @@
     padding-left: 71px;
     padding-right: 71px;
     padding-top: 37px;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,6 +45,10 @@
     height: 201px;
     background-color: #ffffff;
   }
+}
+
+.location__map {
+  background-color: #f2f2f2;
 }
 
 .location__dilers {
@@ -83,6 +87,17 @@
   @media (min-width: $desktop-width) {
     width: 168px;
     text-align: left;
+  }
+}
+
+.location__span {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
   }
 }
 

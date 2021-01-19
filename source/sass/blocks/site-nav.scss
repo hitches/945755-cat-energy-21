@@ -146,11 +146,12 @@
     flex-direction: row;
     min-height: 36px;
     padding-top: 19px;
-    margin-left: auto;
+    margin-left: 17.5%;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 17px;
-    width: 480px;
+    margin-left: 538px;
+    min-width: 480px;
   }
 }
