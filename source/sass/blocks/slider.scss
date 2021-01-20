@@ -25,11 +25,30 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
-    border-bottom: 1px dashed rgba($color: #000000, $alpha: 0.24);
   }
 
   @media (min-width: $desktop-width) {
     z-index: 21;
+  }
+}
+
+.slider__span-button {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted rgba($color: #000000, $alpha: 0.24);
+
+    &:hover {
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.24);
+    }
+
+    &:focus {
+      border-bottom: none;
+    }
   }
 }
 
@@ -77,6 +96,16 @@
     height: 30px;
     border-radius: 50%;
     background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:focus {
+      border: 1px solid #68b738;
+      outline: none;
+    }
   }
 }
 
@@ -152,4 +181,8 @@
     top: -56px;
     z-index: 21;
   }
+}
+
+.slider__width {
+  width: auto;
 }

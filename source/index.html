@@ -108,13 +108,13 @@
             <h3 class="item__title item__slim">Похудение</h3>
             <p class="item__description">Ваш кот весит больше собаки и почти&nbsp;утратил способность лазить по деревьям?
               Пора на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="item__link" href="#">Каталог slim</a>
+            <a class="item__link" href="catalog-slim.html">Каталог slim</a>
           </li>
           <li class="catalogs__item item">
             <h3 class="item__title item__mass">Набор массы</h3>
             <p class="item__description">Заработать авторитет среди дворовых&nbsp;котов и&nbsp;даже собак? Серия Cat Energy
               Pro&nbsp;поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="item__link" href="#">Каталог pro</a>
+            <a class="item__link" href="catalog-mass.html">Каталог pro</a>
           </li>
         </ul>
       </div>
@@ -173,7 +173,7 @@
               <source type="image/webp" srcset="img/before-mobile1@1x.webp 1x, img/before-mobile1@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/cat-fat@1x.png 1x, img/cat-fat@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/cat-fat@1x.png 1x, img/cat-fat@2x.png 2x">
-              <img src="img/before-mobile1@1x.png" srcset="img/before-mobile1@2x.png 2x" alt="До">
+              <img class="slider__width" src="img/before-mobile1@1x.png" srcset="img/before-mobile1@2x.png 2x" width="311" height="232" alt="До">
             </picture>
           </div>
           <div class="slider__image slider__image--second">
@@ -185,7 +185,7 @@
               <source type="image/webp" srcset="img/after-mobile1@1x.webp 1x, img/after-mobile1@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/cat-skinny@1x.png 1x, img/cat-skinny@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/cat-skinny@1x.png 1x, img/cat-skinny@2x.png 2x">
-              <img src="img/after-mobile1@1x.png" srcset="img/after-mobile1@2x.png 2x" alt="После">
+              <img class="slider__width" src="img/after-mobile1@1x.png" srcset="img/after-mobile1@2x.png 2x" width="311" height="232" alt="После">
             </picture>
           </div>
           <div class="slider__button-wrapper">
@@ -193,8 +193,12 @@
           </div>
 
           <div class="slider__text">
-            <span class="slider__span">Было</span>
-            <span class="slider__span">Стало</span>
+            <span class="slider__span">
+              <button class="slider__span-button">Было</button>
+            </span>
+            <span class="slider__span">
+              <button class="slider__span-button">Стало</button>
+            </span>
           </div>
         </div>
       </div>
