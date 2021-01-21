@@ -1,5 +1,13 @@
 .promo {
-  margin-bottom: 200px;
+  margin-bottom: 21px;
+  background-image: url("../img/index-background-mobile2@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile2@2x.jpg");
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
@@ -41,7 +49,6 @@
 
 .promo__wrapper {
   position: relative;
-  background-color: $green;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
@@ -61,27 +68,17 @@
   @media (max-width: 767px) {
     content: "";
     position: absolute;
-    background-image: url("../img/index-background-mobile2@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
+    background-color: $background-green;
     width: 100%;
-    height: 100%;
-    opacity: 0.15;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-mobile2@2x.jpg");
-    }
+    height: 302px;
   }
 }
 
 .promo__header {
   margin: 0;
   padding: 0 20px;
-
   width: auto;
-  height: 302px;
-  margin-bottom: 137px;
+  margin-bottom: 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {

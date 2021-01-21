@@ -41,9 +41,8 @@
 }
 
 .page-footer__logo {
-  text-align: center;
-
   @media (max-width: 767px) {
+    text-align: center;
     margin-bottom: 24px;
     padding-bottom: 29px;
     border-bottom: 1px solid #d9d9d9;
@@ -58,16 +57,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 128px;
+    width: 22%;
     padding-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 13%;
     padding-top: 5px;
   }
 }
 
 .page-footer__link {
+  padding-top: 22px;
   display: flex;
   justify-content: space-between;
   height: 27px;

@@ -36,7 +36,9 @@
   text-transform: uppercase;
   border: none;
   outline: none;
+  cursor: pointer;
   padding: 0;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 5px;
