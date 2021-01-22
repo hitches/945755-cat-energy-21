@@ -68,7 +68,7 @@
 }
 
 .page-footer__link {
-  padding-top: 22px;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   height: 27px;
@@ -87,6 +87,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     width: 163px;
   }
 }

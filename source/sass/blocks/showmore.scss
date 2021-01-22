@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     width: 40%;
+    padding-top: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -22,9 +23,9 @@
     left: -9px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: calc(100% + 25px);
-    top: 132px;
+    top: 81px;
     left: -13px;
   }
 
