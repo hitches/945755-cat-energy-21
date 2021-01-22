@@ -1,4 +1,8 @@
 .page-footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: -1;
   padding-bottom: 22px;
   padding-top: 37px;
   padding-left: 20px;

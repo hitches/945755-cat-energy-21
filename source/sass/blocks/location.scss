@@ -26,6 +26,7 @@
   justify-content: space-between;
   padding-left: 19px;
   padding-right: 19px;
+  z-index: 11;
 
   @media (min-width: $tablet-width) {
     padding-left: 71px;
@@ -48,7 +49,14 @@
 }
 
 .location__map {
-  background-color: #f2f2f2;
+  position: relative;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 400px;
+  }
 }
 
 .location__dilers {
@@ -99,8 +107,4 @@
   @media (min-width: $desktop-width) {
     margin-top: 20px;
   }
-}
-
-.location__img {
-  width: 100%;
 }

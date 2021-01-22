@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
 </head>
 
 <body class="page">
@@ -172,7 +174,7 @@
         </legend>
         <p class="information-comment__text wrapper">
           <textarea class="information-comment__textarea" name="comment"
-            placeholder="Расскажите обо всех повадках кота" aria-label="Коментарий"></textarea>
+            placeholder="Расскажите обо всех повадках кота" label="Коментарий"></textarea>
         </p>
       </fieldset>
       <fieldset class="information-extra">
@@ -208,27 +210,28 @@
       </div>
 
     </form>
-    <section class="location">
+    <section class="location location--index">
       <div class="location__wrapper">
         <div class="location__info">
-          <h2 class="location__dilers">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="location__dilers">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <address class="location__address">ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург
+            <span class="location__span">Санкт-Петербург</span>
           </address>
         </div>
-        <div class="location__map">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/location-desktop@1x.webp 1x, img/location-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/location-tablet@1x.webp 1x, img/location-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/location@1x.webp 1x, img/location@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/location-desktop@1x.jpg 1x, img/location-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/location-tablet@1x.jpg 1x, img/location-tablet@2x.jpg 2x">
-            <img class="location__img" src="img/location@1x.jpg" srcset="img/location@2x.jpg 2x"
-              alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="363">
-          </picture>
+        <div class="location__map map">
+          <iframe class="map__yandex" src="https://yandex.ru/map-widget/v1/-/CCUIvKrFLC" width="320" height="362"></iframe>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/location-desktop@1x.webp 1x, img/location-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/location-tablet@1x.webp 1x, img/location-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/location@1x.webp 1x, img/location@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/location-desktop@1x.jpg 1x, img/location-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/location-tablet@1x.jpg 1x, img/location-tablet@2x.jpg 2x">
+              <img class="map__img" src="img/location@1x.jpg" srcset="img/location@2x.jpg 2x"
+                alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="363">
+            </picture>
         </div>
       </div>
     </section>

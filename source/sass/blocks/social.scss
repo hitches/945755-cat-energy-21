@@ -73,6 +73,8 @@
 }
 
 .social__link-fb svg {
+  margin-top: 4px;
+
   @media (min-width: $tablet-width) {
     width: 28px;
     height: 33px;
