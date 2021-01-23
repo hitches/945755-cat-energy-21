@@ -204,11 +204,21 @@
 }
 
 .input-valid {
+  border: 1px solid #68b738;
+}
+
+.input-invalid {
+  stroke: none;
+  fill: none;
+  border: 1px solid #ff8282;
+}
+
+.input-valid + svg {
   stroke: #68b738;
   fill: #68b738;
 }
 
-.input-invalid {
+.input-invalid + svg {
   stroke: #ff8282;
   fill: #ff8282;
 }
