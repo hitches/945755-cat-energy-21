@@ -170,16 +170,6 @@
     color: transparent;
   }
 
-  &:valid + svg {
-    stroke: #68b738;
-    fill: #68b738;
-  }
-
-  &:invalid:not(:focus):not(:placeholder-shown) + svg {
-    stroke: #ff8282;
-    fill: #ff8282;
-  }
-
   @media (min-width: $tablet-width) {
     height: 52px;
     padding-left: 22px;
@@ -211,4 +201,14 @@
     right: 18px;
     top: 17px;
   }
+}
+
+.input-valid {
+  stroke: #68b738;
+  fill: #68b738;
+}
+
+.input-invalid {
+  stroke: #ff8282;
+  fill: #ff8282;
 }

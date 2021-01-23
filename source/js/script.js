@@ -19,57 +19,45 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-ymaps.ready(function () {
-  var myMap = new ymaps.Map('location__map', {
-          center: [55.751574, 37.573856],
-          zoom: 9
-      }, {
-          searchControlProvider: 'yandex#search'
-      }),
+const nameRegEx = /[^А-Я,а-я,a-z,A-Z,ё,Ё,' ',-]/;
+const mailRegEx = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 
-      // Создаём макет содержимого.
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      ),
 
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          hintContent: 'Собственный значок метки',
-          balloonContent: 'Это красивая метка'
-      }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
-          // Своё изображение иконки метки.
-          iconImageHref: 'images/myIcon.gif',
-          // Размеры метки.
-          iconImageSize: [30, 42],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-5, -38]
-      }),
+const form = document.querySelector('.information');
+const formSubmitBtn = document.querySelector('.information button[type="submit"]');
+const emailInput = document.querySelector('input[type="email"]');
+const telInput = document.querySelector('input[type="tel"]');
+const nameInput = document.querySelector('input[name="Имя"]');
+const weightInput = document.querySelector('input[name="weight"]');
 
-      myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-          hintContent: 'Собственный значок метки с контентом',
-          balloonContent: 'А эта — новогодняя',
-          iconContent: '12'
-      }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#imageWithContent',
-          // Своё изображение иконки метки.
-          iconImageHref: 'images/ball.png',
-          // Размеры метки.
-          iconImageSize: [48, 48],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-24, -24],
-          // Смещение слоя с содержимым относительно слоя с картинкой.
-          iconContentOffset: [15, 15],
-          // Макет содержимого.
-          iconContentLayout: MyIconContentLayout
-      });
+if (form) {
 
-  myMap.geoObjects
-      .add(myPlacemark)
-      .add(myPlacemarkWithContent);
+nameInput.addEventListener('input', () => {
+nameInput.value = nameInput.value.replace(nameRegEx, '');
 });
+
+formSubmitBtn.addEventListener('click', (evt) => {
+document.activeElement.blur();
+
+if (!mailRegEx.test(emailInput.value)) {
+emailInput.classList.add('input-invalid');
+} else {
+emailInput.classList.add('input-valid');
+}
+if (!nameInput.checkValidity()) {
+nameInput.classList.add('input-invalid')
+} else {
+nameInput.classList.add('input-valid')
+}
+if (!telInput.checkValidity()) {
+telInput.classList.add('input-invalid')
+} else {
+telInput.classList.add('input-valid')
+}
+if (!weightInput.checkValidity()) {
+weightInput.classList.add('input-invalid')
+} else {
+weightInput.classList.add('input-valid')
+}
+})
+}
