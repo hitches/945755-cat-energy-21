@@ -59,8 +59,33 @@
   }
 }
 
-.site-list__index-item--active {
+.site-list__item-index {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    height: 36px;
+  }
+}
+
+.site-list__item-index--active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid #68b738;
+  }
+
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid #ffffff;
+  }
+}
+
+.site-list__item-index:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
   }
 }

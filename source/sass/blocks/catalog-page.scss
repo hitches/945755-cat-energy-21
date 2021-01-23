@@ -10,11 +10,13 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     padding-top: 51px;
+    padding-bottom: 84px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 35px;
+    margin: 0 auto;
+    margin-bottom: 85px;
     padding-top: 0;
     padding-bottom: 0;
   }

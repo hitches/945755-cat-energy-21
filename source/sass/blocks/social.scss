@@ -1,43 +1,36 @@
 .social__list {
   margin: 0 auto;
   padding: 0;
-  width: 100%;
+  width: 280px;
   list-style: none;
-  margin-bottom: 22px;
-  padding-bottom: 16px;
+  padding-bottom: 5px;
   padding-left: 75px;
   padding-right: 75px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     border: none;
-    width: 129px;
+    width: 45%;
+    flex-wrap: wrap;
     padding: 0;
-    padding-top: 5px;
   }
 }
 
 .social__item {
-  width: 23px;
-  height: 22px;
-
-  @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 33px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 3px;
-  }
+  text-align: center;
+  align-items: center;
+  display: flex;
 }
 
 .social__link {
+  width: 56px;
+  height: 33px;
   display: block;
   box-sizing: border-box;
-  height: 16px;
   stroke: #666666;
   fill: #666666;
 
@@ -53,36 +46,36 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 33px;
+    width: 50px;
+    height: 50px;
   }
 }
 
-.social__link-vk {
-  width: 23px;
-  height: 16px;
-
+.social__link svg {
   @media (min-width: $tablet-width) {
     width: 30px;
-    height: 22px;
+    height: 30px;
   }
 }
 
-.social__link-insta {
-  width: 16px;
-  height: 16px;
+.social__link-vk svg {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 28px;
+  }
+}
 
+.social__link-insta svg {
   @media (min-width: $tablet-width) {
     width: 23px;
-    height: 23px;
+    height: 31px;
   }
 }
 
-.social__link-fb {
-  width: 22px;
-  height: 22px;
-
+.social__link-fb svg {
   @media (min-width: $tablet-width) {
     width: 28px;
     height: 33px;
+    margin-top: 4px;
   }
 }

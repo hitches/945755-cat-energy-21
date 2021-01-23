@@ -4,8 +4,13 @@
   line-height: 1.15;
   font-weight: 400;
   padding-top: 7px;
+  display: block;
 
   @media (min-width: $desktop-width) {
     padding-top: 8px;
   }
+}
+
+.copyright__svg {
+  flex-shrink: 0;
 }

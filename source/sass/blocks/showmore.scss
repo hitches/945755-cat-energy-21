@@ -1,8 +1,10 @@
 .showmore {
-  padding-top: 78px;
+  padding-top: 76px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     width: 40%;
+    padding-top: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -14,18 +16,12 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    width: calc(100% + 17px);
     height: 430px;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
-    top: 125px;
-    left: -9px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: calc(100% + 25px);
-    top: 132px;
-    left: -13px;
+    width: calc(100% + 17px);
+    top: 81px;
+    left: -7px;
   }
 
   @media (min-width: $desktop-width) {

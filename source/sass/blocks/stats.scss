@@ -1,6 +1,10 @@
 .stats {
   position: relative;
   width: 122px;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+  }
 }
 
 .stats::before {
@@ -15,7 +19,7 @@
     width: 162px;
     height: 72px;
     background-image: url("../img/frame2.svg");
-    left: -20px;
+    left: 0;
     top: -16px;
   }
 }
@@ -28,6 +32,7 @@
   margin: 0;
   margin-bottom: 10px;
   text-align: center;
+  display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -49,9 +54,15 @@
   width: 80px;
   margin: 0 auto;
   position: relative;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    width: 129px;
+    width: 135px;
     font-size: 14px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
   }
 }
