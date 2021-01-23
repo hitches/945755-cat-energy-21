@@ -59,7 +59,7 @@
   top: 0;
   left: 0;
   z-index: 0;
-  height: 0.6em;
+  height: 0.7em;
   border-bottom: 2px solid #68b738;
 }
 
@@ -68,8 +68,13 @@
   display: inline-block;
   background-color: #ffffff;
   z-index: 11;
-  padding-left: 25px;
-  padding-right: 40px;
+  padding-left: 19px;
+  padding-right: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 39px;
+    padding-right: 42px;
+  }
 }
 
 .information-extra__group {

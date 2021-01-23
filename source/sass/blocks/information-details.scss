@@ -62,17 +62,24 @@
   top: 0;
   left: 0;
   z-index: 0;
-  height: 0.6em;
+  height: 0.7em;
   border-bottom: 2px solid #68b738;
 }
 
 .information-details__span {
+  width: 220px;
   position: relative;
   display: inline-block;
   background-color: #ffffff;
   z-index: 11;
-  padding-left: 25px;
-  padding-right: 40px;
+  padding-left: 19px;
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-left: 39px;
+    padding-right: 42px;
+  }
 }
 
 .information-details__list {
@@ -128,6 +135,7 @@
     line-height: 1.5;
     width: 75px;
     padding-top: 10px;
+    margin-right: 18px;
   }
 
   @media (min-width: $desktop-width) {

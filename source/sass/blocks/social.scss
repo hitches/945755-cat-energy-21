@@ -1,7 +1,7 @@
 .social__list {
   margin: 0 auto;
   padding: 0;
-  width: 100%;
+  width: 280px;
   list-style: none;
   padding-bottom: 5px;
   padding-left: 75px;
@@ -73,10 +73,9 @@
 }
 
 .social__link-fb svg {
-  margin-top: 4px;
-
   @media (min-width: $tablet-width) {
     width: 28px;
     height: 33px;
+    margin-top: 4px;
   }
 }
