@@ -145,6 +145,10 @@
   border: 1px solid #bababa;
 }
 
+.information-extra__checkbox + label:active::before {
+  border: 1px solid #000000;
+}
+
 .information-extra__checkbox:checked + label::after {
   content: "";
   position: absolute;

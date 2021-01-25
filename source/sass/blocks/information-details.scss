@@ -192,7 +192,7 @@
   width: 20px;
   height: auto;
   position: absolute;
-  right: 20px;
+  right: 14px;
   top: 15px;
   stroke: #222222;
   fill: #222222;
@@ -203,22 +203,22 @@
   }
 }
 
-.input-valid {
+.information-details__input--valid {
   border: 2px solid #68b738;
 }
 
-.input-invalid {
+.information-details__input--invalid {
   stroke: none;
   fill: none;
   border: 2px solid #ff8282;
 }
 
-.input-valid + svg {
+.information-details__input-valid + svg {
   stroke: #68b738;
   fill: #68b738;
 }
 
-.input-invalid + svg {
+.information-details__input-invalid + svg {
   stroke: #ff8282;
   fill: #ff8282;
 }

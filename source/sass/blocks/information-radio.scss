@@ -74,6 +74,10 @@
   border: 1px solid #bababa;
 }
 
+.information-radio__checkbox + label:active::before {
+  border: 1px solid #000000;
+}
+
 .information-radio__checkbox:checked + label::after {
   content: "";
   position: absolute;

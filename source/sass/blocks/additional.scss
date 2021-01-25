@@ -173,7 +173,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding-top: 23px;
-    width: 275px;
+    width: 286px;
     justify-content: space-between;
   }
 }
@@ -181,11 +181,22 @@
 .additional__span {
   @media (min-width: $tablet-width) {
     text-align: right;
-    margin-right: 48px;
+    margin-right: 49px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+  }
+}
+
+.additional__span2 {
+  @media (min-width: $tablet-width) {
+    margin-left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    padding-right: 8px;
   }
 }
 
@@ -246,7 +257,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 600px;
+    min-width: 612px;
     align-items: center;
   }
 }

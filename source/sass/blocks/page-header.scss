@@ -38,6 +38,7 @@
   width: 230px;
   padding-left: 20px;
   padding-top: 11px;
+  padding-bottom: 14px;
   cursor: pointer;
 
   &:hover {
@@ -50,10 +51,22 @@
 
   @media (min-width: $tablet-width) {
     width: 175px;
+    height: 55px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
+    height: 60px;
     width: 202px;
+  }
+}
+
+.page-header__img {
+  @media (min-width: $tablet-width) {
+    height: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 60px;
   }
 }

@@ -21,6 +21,17 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.styles = styles;
+
+const stylesMin = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -31,7 +42,9 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
-exports.styles = styles;
+exports.stylesMin = stylesMin;
+
+
 
 //HTML
 
@@ -118,7 +131,7 @@ const clean = () => {
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -150,6 +163,7 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    stylesMin,
     html,
     scripts,
     sprite,
@@ -165,6 +179,7 @@ exports.default = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    stylesMin,
     html,
     scripts,
     sprite,
