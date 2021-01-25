@@ -141,11 +141,11 @@
   }
 }
 
-.information-extra__checkbox + label:hover::before {
+.information-extra__checkbox:hover + label::before {
   border: 1px solid #bababa;
 }
 
-.information-extra__checkbox + label:active::before {
+.information-extra__checkbox:focus + label::before {
   border: 1px solid #000000;
 }
 

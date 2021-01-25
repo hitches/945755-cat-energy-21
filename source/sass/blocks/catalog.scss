@@ -39,6 +39,7 @@
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+  height: 209px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -94,8 +95,8 @@
 
 .catalog__cart {
   display: flex;
-  margin-bottom: 13px;
-  padding-top: 17px;
+  margin-bottom: 11px;
+  padding-top: 18px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;

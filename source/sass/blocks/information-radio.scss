@@ -70,11 +70,11 @@
   }
 }
 
-.information-radio__checkbox + label:hover::before {
+.information-radio__checkbox:hover + label::before {
   border: 1px solid #bababa;
 }
 
-.information-radio__checkbox + label:active::before {
+.information-radio__checkbox:focus + label::before {
   border: 1px solid #000000;
 }
 

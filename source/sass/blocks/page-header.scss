@@ -57,16 +57,17 @@
 
   @media (min-width: $desktop-width) {
     height: 60px;
-    width: 202px;
+    width: 205px;
   }
 }
 
 .page-header__img {
   @media (min-width: $tablet-width) {
-    height: 55px;
+    height: 53px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 201px;
     height: 60px;
   }
 }
