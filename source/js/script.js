@@ -40,24 +40,24 @@ formSubmitBtn.addEventListener("click", (evt) => {
 document.activeElement.blur();
 
 if (!mailRegEx.test(emailInput.value)) {
-emailInput.classList.add("information-details__input-invalid");
+emailInput.classList.add("information-details__input--invalid");
 } else {
-emailInput.classList.add("information-details__input-valid");
+emailInput.classList.add("information-details__input--valid");
 }
 if (!nameInput.checkValidity()) {
-nameInput.classList.add("information-details__input-invalid")
+nameInput.classList.add("information-details__input--invalid")
 } else {
-nameInput.classList.add("information-details__input-valid")
+nameInput.classList.add("information-details__input--valid")
 }
 if (!telInput.checkValidity()) {
-telInput.classList.add("information-details__input-invalid")
+telInput.classList.add("information-details__input--invalid")
 } else {
-telInput.classList.add("information-details__input-valid")
+telInput.classList.add("information-details__input--valid")
 }
 if (!weightInput.checkValidity()) {
-weightInput.classList.add("information-details__input-invalid")
+weightInput.classList.add("information-details__input--invalid")
 } else {
-weightInput.classList.add("information-details__input-valid")
+weightInput.classList.add("information-details__input--valid")
 }
 })
 }

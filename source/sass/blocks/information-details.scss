@@ -213,12 +213,12 @@
   border: 2px solid #ff8282;
 }
 
-.information-details__input-valid + svg {
+.information-details__input--valid + svg {
   stroke: #68b738;
   fill: #68b738;
 }
 
-.information-details__input-invalid + svg {
+.information-details__input--invalid + svg {
   stroke: #ff8282;
   fill: #ff8282;
 }
